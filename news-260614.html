@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+document.addEventListener('click', function(e) {
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
+  }
+});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily News Decode – 2026-06-14</title>
@@ -47,43 +61,20 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
-<p>Nigerian <mark>Drug Kingpin</mark> Arrested After <mark>Dramatic Standoff</mark> in Bangkok; Thai <mark>Accomplice</mark> Admits <mark>Smuggling</mark> Heroin and Cocaine from Neighbouring Country Three Times</p>
-
-<hr class="div">
-
-<p>Investigators from the Metropolitan Police Bureau <mark>arrested</mark> the alleged leader of a Nigerian <mark>drug trafficking</mark> network in Bangkok in a dramatic late-night operation during which the <mark>suspect</mark> attempted to <mark>ram</mark> his way through a police <mark>blockade</mark> before being <mark>apprehended</mark>. The arrest came amid a broader <mark>crackdown</mark> on <mark>West African drug networks</mark> that have used Thailand as both a <mark>transit hub</mark> and a <mark>retail market</mark> for <mark>illicit substances</mark> including cocaine and heroin.</p>
-
-<p>The <mark>suspect</mark>, identified as a Nigerian national, was <mark>tracked</mark> by <mark>undercover</mark> police to a location in Bangkok before being <mark>cornered</mark>. As officers <mark>moved in</mark> to make the <mark>arrest</mark>, he allegedly <mark>attempted</mark> to escape by <mark>ramming</mark> his vehicle through a police <mark>cordon</mark>, but was <mark>subdued</mark> after a tense <mark>standoff</mark> with <mark>arresting officers</mark>. The <mark>metropolitan police chief</mark> confirmed the operation and said the man was a <mark>key figure</mark> in a <mark>narcotics distribution</mark> network that had been operating across Bangkok's <mark>entertainment districts</mark>, particularly in the Nana and Silom areas.</p>
-
-<p>The <mark>arrest</mark> was part of a <mark>series of operations</mark> that had been <mark>running</mark> since late 2025, when <mark>undercover</mark> officers first <mark>dismantled</mark> a Nana-based <mark>drug ring</mark> by <mark>posing</mark> as construction workers and arresting nine Nigerian <mark>suspects</mark> in a <mark>sting operation</mark>. That investigation later <mark>expanded</mark>, leading to further <mark>raids</mark> and <mark>seizures</mark> of assets worth several million baht. The latest <mark>kingpin</mark> arrest is <mark>considered</mark> the most significant <mark>development</mark> in the <mark>ongoing</mark> operation.</p>
-
-<p>In a related and <mark>simultaneous</mark> case reported on 14 June, the Central Investigation Bureau (<mark>CIB</mark>) <mark>confirmed</mark> the <mark>arrest</mark> of three <mark>suspects</mark> in <mark>coordinated raids</mark> across Bangkok and Samut Prakan. Emeka was <mark>detained</mark> near a <mark>toll plaza</mark> on Motorway 9 in Samut Prakan, while a second Nigerian national identified as Anayo was <mark>arrested</mark> at Ramkhamhaeng Soi 24 in Bangkok. A Thai national named Lalita was <mark>apprehended</mark> at a hotel in the Ramkhamhaeng area.</p>
-
-<p>During <mark>questioning</mark>, Lalita reportedly <mark>admitted</mark> to <mark>transporting</mark> heroin and cocaine from a <mark>neighbouring country</mark> into Thailand and <mark>stated</mark> she had done so on <mark>at least three separate occasions</mark>. Anayo <mark>allegedly confessed</mark> that the cocaine in his <mark>possession</mark> was being <mark>prepared for distribution</mark>. Emeka <mark>denied</mark> the <mark>allegations</mark>. Police said the investigation was <mark>continuing</mark> in order to <mark>identify additional members</mark> of the <mark>network</mark> and <mark>trace</mark> the wider <mark>distribution chain</mark>.</p>
-
-<p>The CIB also <mark>issued</mark> a <mark>public warning</mark> urging people to be <mark>cautious</mark> of <mark>online relationships</mark> that <mark>develop unusually quickly</mark>, noting that <mark>victims</mark> can be <mark>manipulated</mark> into <mark>unwittingly</mark> becoming <mark>drug couriers</mark> or <mark>money mules</mark> for <mark>criminal organisations</mark>. Police said <mark>recruitment</mark> often happens through social media under the <mark>guise</mark> of <mark>romantic relationships</mark> before the <mark>target</mark> is gradually <mark>pressured</mark> into <mark>carrying</mark> <mark>contraband</mark>.</p>
-
-<p>The string of arrests <mark>highlights</mark> Thailand's <mark>persistent</mark> challenge in <mark>combating</mark> the <mark>transnational</mark> <mark>drug trade</mark>, particularly <mark>networks</mark> controlled by <mark>West African</mark> <mark>syndicates</mark> that have established <mark>deep roots</mark> in Bangkok's nightlife and <mark>expatriate communities</mark>. Police said all <mark>suspects</mark> had been <mark>handed over</mark> to the <mark>relevant police stations</mark> for formal <mark>legal proceedings</mark>.</p>
-
-<hr class="div">
-
+<p>Nigerian Drug Kingpin Arrested After Dramatic Standoff in Bangkok; Thai Accomplice Admits Smuggling Heroin and Cocaine from Neighbouring Country Three Times</p>
+<p>Investigators from the Metropolitan Police Bureau arrested the alleged leader of a Nigerian drug trafficking network in Bangkok in a dramatic late-night operation during which the suspect attempted to ram his way through a police blockade before being apprehended. The arrest came amid a broader crackdown on West African drug networks that have used Thailand as both a transit hub and a retail market for illicit substances including cocaine and heroin.</p>
+<p>The suspect, identified as a Nigerian national, was tracked by undercover police to a location in Bangkok before being cornered. As officers moved in to make the arrest, he allegedly attempted to escape by ramming his vehicle through a police cordon, but was subdued after a tense standoff with arresting officers. The metropolitan police chief confirmed the operation and said the man was a key figure in a narcotics distribution network that had been operating across Bangkok's entertainment districts, particularly in the Nana and Silom areas.</p>
+<p>The arrest was part of a series of operations that had been running since late 2025, when undercover officers first dismantled a Nana-based drug ring by posing as construction workers and arresting nine Nigerian suspects in a sting operation. That investigation later expanded, leading to further raids and seizures of assets worth several million baht. The latest kingpin arrest is considered the most significant development in the ongoing operation.</p>
+<p>In a related and simultaneous case reported on 14 June, the Central Investigation Bureau (CIB) confirmed the arrest of three suspects in coordinated raids across Bangkok and Samut Prakan. Emeka was detained near a toll plaza on Motorway 9 in Samut Prakan, while a second Nigerian national identified as Anayo was arrested at Ramkhamhaeng Soi 24 in Bangkok. A Thai national named Lalita was apprehended at a hotel in the Ramkhamhaeng area.</p>
+<p>During questioning, Lalita reportedly admitted to transporting heroin and cocaine from a neighbouring country into Thailand and stated she had done so on at least three separate occasions. Anayo allegedly confessed that the cocaine in his possession was being prepared for distribution. Emeka denied the allegations. Police said the investigation was continuing in order to identify additional members of the network and trace the wider distribution chain.</p>
+<p>The CIB also issued a public warning urging people to be cautious of online relationships that develop unusually quickly, noting that victims can be manipulated into unwittingly becoming drug couriers or money mules for criminal organisations. Police said recruitment often happens through social media under the guise of romantic relationships before the target is gradually pressured into carrying contraband.</p>
+<p>The string of arrests highlights Thailand's persistent challenge in combating the transnational drug trade, particularly networks controlled by West African syndicates that have established deep roots in Bangkok's nightlife and expatriate communities. Police said all suspects had been handed over to the relevant police stations for formal legal proceedings.</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 2 — คำแปลภาษาไทย</div>
-<p><mark>จับหัวหน้าเครือข่ายยาเสพติด</mark>ชาวไนจีเรียในกรุงเทพฯ หลังเกิด<mark>การสกัดกั้นตำรวจ</mark>อย่างแสนสะแแสนตื่นเต้น; ชาวไทย<mark>รับสารภาพ</mark>ลักลอบเฮโรอีน-โคเคน  3 ครั้ง</p>
-
-<hr class="div">
-
-<p><mark>นักสืบ</mark>จากกองบัญชาการตำรวจนครบาล<mark>จับกุม</mark>หัวหน้าเครือข่าย<mark>ค้ายาเสพติด</mark>ชาวไนจีเรียในกรุงเทพฯ ระหว่างปฏิบัติการ<mark>ค่ำคืนสุดขึ้กทุรน</mark> ผู้ต้องสงสัยพยายาม<mark>ขับรถชน</mark>แนวกั้น<mark>ตำรวจ</mark>ก่อนถูก<mark>ชะลอก</mark> การจับกุมครั้งนี้ถือเป็น<mark>ความคืบหน้าการดำเนินคดีที่เริ่มตั้งแต่ปลายปี 2568</mark> เมื่อ<mark>เจ้าหน้าที่นอกเครื่องปลอมตัวเป็นช่างก่อสร้าง</mark>เข้า<mark>ตี</mark>เครือข่ายยาเสพติดย่านนานา<mark> และ</mark>จับกุม<mark>ชาวไนจีเรีย 9 รายใน</mark>ปฏิบัติการล้อมอ่าว</p>
-
-<p><mark>อีกคดีที่เกิดขึ้นพร้อมกัน</mark>ในวันที่ 14 มิถุนายน <mark>สำนักงานสอบสวนกลาง</mark> (CIB) <mark>ยืนยัน</mark>การ<mark>จับกุม</mark>ผู้ต้องสงสัย 3 รายใน<mark>การบุกค้นพร้อมกันหลายจุด</mark>ใน กทม.-สมุทรปราการ เอมเกาถูก<mark>ควบคุมตัว</mark>ใกล้<mark>ด่านเก็บเงิน</mark>ด่วนทางมอเตอร์เวย์ 9 ในสมุทรปราการ อานาโยถูกจับที่ซอยรามคำแหง 24 ส่วนลลิตาชาวไทยถูกจับที่โรงแรมย่านรามคำแหง</p>
-
-<p>ระหว่าง<mark>การสอบสวน</mark> ลลิตา<mark>รับสารภาพ</mark>ว่าตนเคย<mark>ลักลอบนำเฮโรอีนและโคเคน</mark>เข้ามาจากประเทศเพื่อนบ้าน 3 ครั้งแล้ว อานาโย<mark>รับสารภาพ</mark>ว่าโคเคนที่อยู่ในครอบครองของตนกำลัง<mark>จัดเตรียมจำหน่าย</mark> ส่วนเอเมกา<mark>ปฏิเสธ</mark>ข้อกล่าวหาทั้งหมด ตำรวจยัง<mark>เตือนภัย</mark>ประชาชนให้ระวังการได้เป็น "บุรีษ<mark>ขนส่งยาเสพติด</mark>โดยไม่รู้ตัว" หลังถูก<mark>ชักจูง</mark>ผ่าน<mark>ความสัมพันธ์ออนไลน์</mark></p>
-
-<hr class="div">
-
+<p>จับหัวหน้าเครือข่ายยาเสพติดชาวไนจีเรียในกรุงเทพฯ หลังเกิดการสกัดกั้นตำรวจอย่างแสนสะแแสนตื่นเต้น; ชาวไทยรับสารภาพลักลอบเฮโรอีน-โคเคน  3 ครั้ง</p>
+<p>นักสืบจากกองบัญชาการตำรวจนครบาลจับกุมหัวหน้าเครือข่ายค้ายาเสพติดชาวไนจีเรียในกรุงเทพฯ ระหว่างปฏิบัติการค่ำคืนสุดขึ้กทุรน ผู้ต้องสงสัยพยายามขับรถชนแนวกั้นตำรวจก่อนถูกชะลอก การจับกุมครั้งนี้ถือเป็นความคืบหน้าการดำเนินคดีที่เริ่มตั้งแต่ปลายปี 2568 เมื่อเจ้าหน้าที่นอกเครื่องปลอมตัวเป็นช่างก่อสร้างเข้าตีเครือข่ายยาเสพติดย่านนานา และจับกุมชาวไนจีเรีย 9 รายในปฏิบัติการล้อมอ่าว</p>
+<p>อีกคดีที่เกิดขึ้นพร้อมกันในวันที่ 14 มิถุนายน สำนักงานสอบสวนกลาง (CIB) ยืนยันการจับกุมผู้ต้องสงสัย 3 รายในการบุกค้นพร้อมกันหลายจุดใน กทม.-สมุทรปราการ เอมเกาถูกควบคุมตัวใกล้ด่านเก็บเงินด่วนทางมอเตอร์เวย์ 9 ในสมุทรปราการ อานาโยถูกจับที่ซอยรามคำแหง 24 ส่วนลลิตาชาวไทยถูกจับที่โรงแรมย่านรามคำแหง</p>
+<p>ระหว่างการสอบสวน ลลิตารับสารภาพว่าตนเคยลักลอบนำเฮโรอีนและโคเคนเข้ามาจากประเทศเพื่อนบ้าน 3 ครั้งแล้ว อานาโยรับสารภาพว่าโคเคนที่อยู่ในครอบครองของตนกำลังจัดเตรียมจำหน่าย ส่วนเอเมกาปฏิเสธข้อกล่าวหาทั้งหมด ตำรวจยังเตือนภัยประชาชนให้ระวังการได้เป็น "บุรีษขนส่งยาเสพติดโดยไม่รู้ตัว" หลังถูกชักจูงผ่านความสัมพันธ์ออนไลน์</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 3 — Vocabulary Table (30 Words)</div>
-<hr class="div">
-
-<div class="headline" style="margin-top: 20px; font-size: 22px;">Part 4 — Anki Format</div>
 
 
 <a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
