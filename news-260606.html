@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+document.addEventListener('click', function(e) {
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
+  }
+});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily News Decode – 2026-06-06</title>
@@ -47,47 +61,22 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
-<p>Bolt <mark>Permanently Bans</mark> Driver Who <mark>Assaulted</mark> Japanese <mark>Restaurateur</mark> in Bangkok Fare <mark>Dispute</mark>; Government <mark>Orders</mark> Platform to <mark>Explain</mark></p>
-
-<hr class="div">
-
-<p>Ride-hailing platform Bolt Thailand has <mark>permanently banned</mark> and <mark>terminated</mark> the driver accused of <mark>assaulting</mark> a 52-year-old Japanese <mark>restaurateur</mark> in the Asok area of Bangkok on 28 May, following a <mark>dispute</mark> over a <mark>previously agreed fare</mark>. The company announced the action on Wednesday after the <mark>incident</mark> went <mark>viral</mark> on social media and <mark>triggered</mark> a wave of public <mark>outrage</mark> and government <mark>intervention</mark>.</p>
-
-<p>The <mark>complainant</mark>, who owns a Japanese restaurant in Bangkok, said he had <mark>booked</mark> a ride through the Bolt <mark>app</mark> to travel from his home to work. The driver <mark>abruptly</mark> stopped the vehicle near Sukhumvit Road and told him: "For this fare, I can only go this far," before <mark>ordering</mark> him to <mark>exit</mark> the vehicle. When the passenger <mark>objected</mark>, the driver allegedly <mark>punched</mark> him <mark>repeatedly</mark>, leaving him with a head wound and multiple <mark>bruises</mark>. Witnesses at the scene helped the <mark>victim</mark> travel to Thong Lor Police Station, where he <mark>filed a formal complaint</mark>.</p>
-
-<p>The incident was not immediately <mark>publicised</mark> but <mark>gained traction</mark> after the Facebook page "Jmoi V+" shared details on Monday, causing the story to <mark>spread rapidly</mark> across Thai and international media. Bolt Thailand confirmed the driver had been using his own <mark>registered account</mark>, <mark>contrary to</mark> initial <mark>speculation</mark> that he may have been <mark>impersonating</mark> another driver.</p>
-
-<p>The case attracted senior <mark>government attention</mark>. Prime Minister's Office Minister Supamas Isarabhakdi <mark>intervened</mark> directly, ordering Bolt to <mark>provide</mark> a full public <mark>explanation</mark> by 5 June. She <mark>emphasised</mark> that the attack was a clear <mark>violation</mark> of the <mark>Consumer Protection Act</mark> of 1979, which <mark>guarantees</mark> equal safety rights to both Thai citizens and foreign <mark>nationals</mark>. Under the law, service providers are <mark>prohibited</mark> from <mark>abandoning</mark> or <mark>harming</mark> paying customers under any <mark>circumstances</mark>.</p>
-
-<p>Authorities also announced that <mark>ride-hailing</mark> companies would be <mark>summoned</mark> to a <mark>mandatory</mark> meeting on 12 June to review <mark>driver licensing</mark>, <mark>vetting procedures</mark>, and <mark>passenger safety</mark> standards across all <mark>platforms</mark> operating in Thailand. Officials said the case had exposed <mark>systemic</mark> weaknesses in how companies <mark>monitor</mark> driver behaviour and handle <mark>passenger complaints</mark>.</p>
-
-<p>Bolt stated the driver had <mark>expressed willingness</mark> to <mark>apologise</mark> and take <mark>responsibility</mark> for his actions but <mark>respected</mark> the victim's decision not to meet him. The <mark>platform</mark> said it was fully <mark>cooperating</mark> with police and government <mark>investigators</mark>.</p>
-
-<p>The case has <mark>reignited</mark> concerns about <mark>tourist safety</mark> in Bangkok, following other recent <mark>high-profile</mark> incidents involving foreign visitors, and has placed fresh <mark>pressure</mark> on ride-hailing <mark>platforms</mark> to <mark>strengthen</mark> their <mark>accountability</mark> mechanisms.</p>
-
-<hr class="div">
-
+<p>Bolt Permanently Bans Driver Who Assaulted Japanese Restaurateur in Bangkok Fare Dispute; Government Orders Platform to Explain</p>
+<p>Ride-hailing platform Bolt Thailand has permanently banned and terminated the driver accused of assaulting a 52-year-old Japanese restaurateur in the Asok area of Bangkok on 28 May, following a dispute over a previously agreed fare. The company announced the action on Wednesday after the incident went viral on social media and triggered a wave of public outrage and government intervention.</p>
+<p>The complainant, who owns a Japanese restaurant in Bangkok, said he had booked a ride through the Bolt app to travel from his home to work. The driver abruptly stopped the vehicle near Sukhumvit Road and told him: "For this fare, I can only go this far," before ordering him to exit the vehicle. When the passenger objected, the driver allegedly punched him repeatedly, leaving him with a head wound and multiple bruises. Witnesses at the scene helped the victim travel to Thong Lor Police Station, where he filed a formal complaint.</p>
+<p>The incident was not immediately publicised but gained traction after the Facebook page "Jmoi V+" shared details on Monday, causing the story to spread rapidly across Thai and international media. Bolt Thailand confirmed the driver had been using his own registered account, contrary to initial speculation that he may have been impersonating another driver.</p>
+<p>The case attracted senior government attention. Prime Minister's Office Minister Supamas Isarabhakdi intervened directly, ordering Bolt to provide a full public explanation by 5 June. She emphasised that the attack was a clear violation of the Consumer Protection Act of 1979, which guarantees equal safety rights to both Thai citizens and foreign nationals. Under the law, service providers are prohibited from abandoning or harming paying customers under any circumstances.</p>
+<p>Authorities also announced that ride-hailing companies would be summoned to a mandatory meeting on 12 June to review driver licensing, vetting procedures, and passenger safety standards across all platforms operating in Thailand. Officials said the case had exposed systemic weaknesses in how companies monitor driver behaviour and handle passenger complaints.</p>
+<p>Bolt stated the driver had expressed willingness to apologise and take responsibility for his actions but respected the victim's decision not to meet him. The platform said it was fully cooperating with police and government investigators.</p>
+<p>The case has reignited concerns about tourist safety in Bangkok, following other recent high-profile incidents involving foreign visitors, and has placed fresh pressure on ride-hailing platforms to strengthen their accountability mechanisms.</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 2 — คำแปลภาษาไทย</div>
-<p><mark>Bolt สั่งแบนถาวร</mark>คนขับที่<mark>ทำร้ายร่างกาย</mark>เจ้าของร้านอาหารญี่ปุ่นในกรุงเทพฯ เหตุ<mark>ข้อพิพาท</mark>เรื่องค่าโดยสาร รัฐบาล<mark>สั่ง</mark>แพลตฟอร์ม<mark>ชี้แจง</mark></p>
-
-<hr class="div">
-
-<p>แพลตฟอร์มเรียกรถ<mark>Bolt Thailand สั่งแบนถาวร</mark>และ<mark>ยุติ</mark>การใช้งานของคนขับที่ถูกกล่าวหาว่า<mark>ทำร้ายร่างกาย</mark>เจ้าของร้านอาหารญี่ปุ่นอายุ 52 ปี ในย่านอโสก กรุงเทพฯ เมื่อวันที่ 28 พฤษภาคม หลังเกิด<mark>ข้อพิพาท</mark>เรื่อง<mark>ค่าโดยสารที่ตกลงไว้ก่อนหน้า</mark></p>
-
-<p><mark>ผู้ร้องทุกข์</mark>เปิดเผยว่าจองรถผ่านแอป Bolt เพื่อเดินทางจากบ้านไปทำงาน คนขับ<mark>หยุดรถทันที</mark>และแจ้งว่าค่าโดยสารนั้นน้อยเกินไป เมื่อ<mark>ผู้โดยสารคัดค้าน</mark> คนขับ<mark>ชก</mark>เขา<mark>ซ้ำแล้วซ้ำเล่า</mark> ทำให้เสีย<mark>ศีรษะและรอยช้ำ</mark>หลายแห่ง ผู้สักขยานช่วยพา<mark>ผู้เสียหาย</mark>ไป<mark>ยื่นเรื่องร้องทุกข์</mark>ที่สถานีตำรวจทองหล่อ</p>
-
-<p>เหตุการณ์บานปลายแบบออนไลน์หลังเพจเฟซบุ๊ก "เจมอย V+" <mark>เผยแพร่</mark>เรื่องราวในวันจันทร์ ส่งผลให้ข่าว<mark>แพร่ออนไลน์อย่างรวดเร็ว</mark> Bolt ยืนยันว่าคนขับใช้<mark>บัญชีของตนเอง</mark> ไม่ใช่<mark>แสรงเสริม</mark>บัญชีผู้อื่น ตามที่มีการ<mark>คาดเดาเบื้องต้น</mark></p>
-
-<p>รัฐมนตรีสำนักนายกรัฐมนตรี <mark>สุพัฒน์ อีสรภักดิ์เข้าแทรกแซง</mark>โดยตรง <mark>สั่งให้</mark> Bolt <mark>ชี้แจง</mark>ต่อสาธารณะภายในวันที่ 5 มิถุนายน โดยย้ำว่าการโจมตีนี้เป็นการ<mark>ละเมิด</mark> <mark>พระราชบัญญัติคุ้มครองผู้บริโภค</mark> พ.ศ. 2522 ซึ่ง<mark>รับประกัน</mark>ความปลอดภัยทั้งแก่พลเมืองไทยและชาวต่างชาติอย่างเท่าเทียมกัน</p>
-
-<p>นอกจากนี้ ทางการยังประกาศว่าจะ<mark>เรียก</mark>บริษัท<mark>เรียกรถ</mark>ทุกแพลตฟอร์มมาประชุมในวันที่ 12 มิถุนายน เพื่อทบทวนมาตรฐาน<mark>ใบอนุญาตคนขับ</mark> การ<mark>คัดกรองคุณสมบัติ</mark> และ<mark>มาตรฐานความปลอดภัยของผู้โดยสาร</mark>ทั้งหมดในไทย</p>
-
-<hr class="div">
-
+<p>Bolt สั่งแบนถาวรคนขับที่ทำร้ายร่างกายเจ้าของร้านอาหารญี่ปุ่นในกรุงเทพฯ เหตุข้อพิพาทเรื่องค่าโดยสาร รัฐบาลสั่งแพลตฟอร์มชี้แจง</p>
+<p>แพลตฟอร์มเรียกรถBolt Thailand สั่งแบนถาวรและยุติการใช้งานของคนขับที่ถูกกล่าวหาว่าทำร้ายร่างกายเจ้าของร้านอาหารญี่ปุ่นอายุ 52 ปี ในย่านอโสก กรุงเทพฯ เมื่อวันที่ 28 พฤษภาคม หลังเกิดข้อพิพาทเรื่องค่าโดยสารที่ตกลงไว้ก่อนหน้า</p>
+<p>ผู้ร้องทุกข์เปิดเผยว่าจองรถผ่านแอป Bolt เพื่อเดินทางจากบ้านไปทำงาน คนขับหยุดรถทันทีและแจ้งว่าค่าโดยสารนั้นน้อยเกินไป เมื่อผู้โดยสารคัดค้าน คนขับชกเขาซ้ำแล้วซ้ำเล่า ทำให้เสียศีรษะและรอยช้ำหลายแห่ง ผู้สักขยานช่วยพาผู้เสียหายไปยื่นเรื่องร้องทุกข์ที่สถานีตำรวจทองหล่อ</p>
+<p>เหตุการณ์บานปลายแบบออนไลน์หลังเพจเฟซบุ๊ก "เจมอย V+" เผยแพร่เรื่องราวในวันจันทร์ ส่งผลให้ข่าวแพร่ออนไลน์อย่างรวดเร็ว Bolt ยืนยันว่าคนขับใช้บัญชีของตนเอง ไม่ใช่แสรงเสริมบัญชีผู้อื่น ตามที่มีการคาดเดาเบื้องต้น</p>
+<p>รัฐมนตรีสำนักนายกรัฐมนตรี สุพัฒน์ อีสรภักดิ์เข้าแทรกแซงโดยตรง สั่งให้ Bolt ชี้แจงต่อสาธารณะภายในวันที่ 5 มิถุนายน โดยย้ำว่าการโจมตีนี้เป็นการละเมิด พระราชบัญญัติคุ้มครองผู้บริโภค พ.ศ. 2522 ซึ่งรับประกันความปลอดภัยทั้งแก่พลเมืองไทยและชาวต่างชาติอย่างเท่าเทียมกัน</p>
+<p>นอกจากนี้ ทางการยังประกาศว่าจะเรียกบริษัทเรียกรถทุกแพลตฟอร์มมาประชุมในวันที่ 12 มิถุนายน เพื่อทบทวนมาตรฐานใบอนุญาตคนขับ การคัดกรองคุณสมบัติ และมาตรฐานความปลอดภัยของผู้โดยสารทั้งหมดในไทย</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 3 — Vocabulary Table (30 Words)</div>
-<hr class="div">
-
-<div class="headline" style="margin-top: 20px; font-size: 22px;">Part 4 — Anki Format</div>
 
 
 <a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
