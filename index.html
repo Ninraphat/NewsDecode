@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily News Translation - Homepage</title>
+<title>Daily News Decode - Homepage</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg-color: #faf9f6; /* สีพื้นหลังสไตล์กระดาษถนอมสายตา */
+    --bg-color: #faf9f6; 
     --text-main: #1a1a1a;
     --text-muted: #666666;
-    --accent: #8b1a1a; /* สีแดงคลาสสิก */
+    --accent: #8b1a1a; 
     --border-color: #e5e5e5;
   }
 
@@ -101,7 +101,7 @@
     max-width: 800px; 
   }
 
-  /* --- Grid (Previous News 1-15 Jun) --- */
+  /* --- Grid (Previous News) --- */
   .grid-section { margin-bottom: 64px; }
   .news-grid { 
     display: grid; 
@@ -167,42 +167,39 @@
     <div class="date-bar">Updated: Tuesday, 16 June 2026</div>
   </header>
 
+  <!-- ข่าวล่าสุด (Featured) -->
   <section class="featured-section">
     <div class="section-label">Today's Highlight</div>
-    <a href="news-16jun.html" class="featured-card">
+    <a href="#" class="featured-card">
       <div class="article-meta">16 June 2026 • General News</div>
-      <h2>ใส่หัวข้อข่าวภาษาอังกฤษของวันที่ 16 มิถุนายนตรงนี้</h2>
-      <p>ใส่เนื้อหาเกริ่นนำข่าวแบบสั้นๆ 1-2 ประโยค เพื่อให้ผู้อ่านรู้ว่าข่าวนี้น่าสนใจอย่างไรก่อนคลิกเข้าไปอ่านฉบับเต็มและดูคำศัพท์...</p>
+      <h2>รออัปเดตข่าวเด่นประจำวัน...</h2>
+      <p>พื้นที่สำหรับข่าวล่าสุดของวันนี้ เมื่อคุณมีเนื้อหาใหม่ สามารถนำมาใส่ในส่วนนี้เพื่อให้ผู้อ่านเห็นเป็นอันดับแรก</p>
     </a>
   </section>
 
+  <!-- ข่าวย้อนหลัง (Archive) -->
   <section class="grid-section">
     <div class="section-label">June 2026 Archive</div>
     
     <div class="news-grid">
-      
-      <a href="news-15jun.html" class="grid-card">
-        <div class="article-meta">15 June 2026</div>
-        <h3>หัวข้อข่าวของวันที่ 15 มิถุนายน</h3>
-        <p>เนื้อหาเกริ่นนำสั้นๆ สำหรับข่าวของวันที่ 15 มิถุนายน...</p>
-        <div class="read-more">Read Article →</div>
+
+      <!-- ข่าว 1 Jun -->
+      <a href="news-01jun.html" class="grid-card">
+        <div class="article-meta">1 June 2026 • Business & Crime</div>
+        <h3>Thai Court Sentences Former Executive to 20 Years for Massive Embezzlement</h3>
+        <p>A Thai criminal court has sentenced the former chief executive of a prominent publicly traded company to 20 years in prison for orchestrating a massive embezzlement scheme...</p>
+        <div class="read-more">Read Article & Translation →</div>
       </a>
 
-      <a href="news-14jun.html" class="grid-card">
-        <div class="article-meta">14 June 2026</div>
-        <h3>หัวข้อข่าวของวันที่ 14 มิถุนายน</h3>
-        <p>เนื้อหาเกริ่นนำสั้นๆ สำหรับข่าวของวันที่ 14 มิถุนายน...</p>
-        <div class="read-more">Read Article →</div>
+      <!-- การ์ดตัวอย่าง สำหรับรอใส่ข่าววันอื่นๆ -->
+      <a href="#" class="grid-card" style="opacity: 0.5;">
+        <div class="article-meta">DD June 2026 • Category</div>
+        <h3>พื้นที่รอรับข่าวสารเพิ่มเติม...</h3>
+        <p>คุณสามารถก๊อปปี้บล็อกนี้เพื่อเพิ่มข่าวของวันที่ 2, 3, 4 เรียงต่อกันไปเรื่อยๆ ได้เลยครับ</p>
+        <div class="read-more">Coming Soon →</div>
       </a>
 
-      <a href="news-13jun.html" class="grid-card">
-        <div class="article-meta">13 June 2026</div>
-        <h3>หัวข้อข่าวของวันที่ 13 มิถุนายน</h3>
-        <p>เนื้อหาเกริ่นนำสั้นๆ สำหรับข่าวของวันที่ 13 มิถุนายน...</p>
-        <div class="read-more">Read Article →</div>
-      </a>
-
-      </div>
+    </div>
   </section>
 
 </div>
