@@ -63,6 +63,11 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 .vword { background:var(--hl); font-weight:700; padding:1px 5px; border-radius:2px; border-bottom:2px solid var(--hl-border); display:inline-block; }
 .vpos { font-style:italic; color:#5c4a2a; font-size:11px; }
 
+/* Back Button */
+.btn-back { display:inline-block; margin-bottom:24px; text-decoration:none; color:var(--accent); font-family:'Playfair Display',serif; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase; transition:opacity 0.2s; }
+.btn-back:hover { opacity:0.6; }
+.btn-back-bottom { margin-top:32px; margin-bottom:0; text-align:center; display:block; border-top:1px solid var(--rule-light); padding-top:20px; }
+
 /* footer */
 .foot { background:var(--ink); color:#777; text-align:center; padding:12px 36px; font-size:9px; letter-spacing:2px; text-transform:uppercase; }
 .foot span { color:#bbb; }
@@ -85,8 +90,11 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 
 <div class="wrap">
 
+<!-- ปุ่มกลับหน้าหลัก (ด้านบน) -->
+<a href="index.html" class="btn-back">&larr; Back to Homepage</a>
+
 <!-- PART 1 -->
-<div class="sec-banner">
+<div class="sec-banner" style="margin-top:0;">
   <div class="sec-num">1</div>
   <div class="sec-head">
     <div class="sec-title">Original Article — English</div>
@@ -192,6 +200,9 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
     <tr><td class="vnum">30</td><td><span class="vword">funeral rites</span></td><td class="vpos">n. phrase</td><td>พิธีกรรมงานศพ</td></tr>
   </tbody>
 </table>
+
+<!-- ปุ่มกลับหน้าหลัก (ด้านล่าง) -->
+<a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
 
 </div><!-- /wrap -->
 
