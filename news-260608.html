@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+document.addEventListener('click', function(e) {
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
+  }
+});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily News Decode – 2026-06-08</title>
@@ -47,47 +61,22 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
-<p>Police <mark>Conclude</mark> Channel 8 Reporter Nattawut Ponglangka Died by <mark>Suicide</mark> After <mark>Ingesting</mark> <mark>Potassium Cyanide</mark>; One Man <mark>Charged</mark> with Illegal <mark>Possession</mark> of <mark>Hazardous Substance</mark></p>
-
-<hr class="div">
-
-<p>Thai police have <mark>concluded</mark> that Nattawut "Nass" Ponglangka, 35, a well-known <mark>field reporter</mark> and news <mark>anchor</mark> at Channel 8, died by <mark>suicide</mark> after <mark>ingesting</mark> <mark>potassium cyanide</mark> at his townhouse in Bang Kruai district, Nonthaburi, on the morning of 30 November 2025. The case, which had gripped Thailand for weeks amid widespread <mark>speculation</mark> over whether the death was <mark>suicide</mark> or <mark>homicide</mark>, was formally <mark>resolved</mark> following an <mark>extensive</mark> police investigation.</p>
-
-<p>Nattawut was initially found dead on his living room floor by friends who had been with him the night before. His death was originally <mark>attributed</mark> to sudden unexplained nocturnal death syndrome, locally known as <mark>lai tai</mark>, a condition associated with unexpected death during sleep. However, public <mark>suspicion</mark> grew rapidly after social media users raised the possibility of <mark>poisoning</mark>, and the <mark>cremation</mark> was <mark>halted</mark> when a government official publicly called for further investigation.</p>
-
-<p>On 6 December 2025, Thailand's Central Institute of <mark>Forensic</mark> Science released a <mark>toxicology</mark> report confirming <mark>lethal</mark> levels of cyanide in both his bloodstream and stomach, sufficient to cause <mark>rapid</mark> death. Police immediately <mark>launched</mark> a formal <mark>investigation</mark>, <mark>summoning</mark> five close <mark>associates</mark> who had been present or in contact with Nattawut around the time of his death.</p>
-
-<p><mark>CCTV footage</mark> from inside the property proved <mark>decisive</mark>. It showed Nattawut <mark>retrieving</mark> a cyanide <mark>packet</mark> from a computer desk at 6:19 am. Approximately 40 seconds later, he returned the packet to the same location. No other person was seen <mark>entering</mark> the room during that period, <mark>ruling out</mark> third-party <mark>involvement</mark>.</p>
-
-<p>A man identified only as Kitti subsequently <mark>admitted</mark> to police that he had <mark>supplied</mark> cyanide to Nattawut on multiple occasions from October, having <mark>obtained</mark> the substance from a gold shop where he worked. A separate <mark>colleague</mark>, Sarawat "Ice" Kijpanit, a fellow Channel 8 news <mark>anchor</mark>, <mark>surrendered</mark> a package of cyanide to investigators, stating he had <mark>retrieved</mark> it from Nattawut's home. <mark>Chat logs</mark> showing Nattawut <mark>discussing</mark> the <mark>procurement</mark> of cyanide were also handed to police by his <mark>supervisor</mark>, Phutta Apiwan.</p>
-
-<p>Dep Comm Pol Maj Gen Atthapol Anusit confirmed that investigators had <mark>concluded</mark> the death was <mark>self-inflicted</mark>. Kitti was formally <mark>charged</mark> with <mark>illegal possession</mark> of a <mark>Type-3 hazardous substance</mark> under Thai law. Police said the case would also serve as a <mark>benchmark</mark> for improving <mark>crime scene investigation</mark> procedures in Thailand, noting that the initial <mark>misclassification</mark> of the death had complicated the <mark>inquiry</mark>.</p>
-
-<p>Nattawut had been the <mark>recipient</mark> of the Thep Narai Nakarat Award for Outstanding <mark>Field Reporter</mark> in 2025. Friends who <mark>testified</mark> described him as appearing cheerful and <mark>enthusiastic</mark> about future plans on the night before his death, with no signs of <mark>suicidal ideation</mark>. The case drew national attention not only for its <mark>tragic</mark> outcome but also for raising questions about <mark>occupational stress</mark> among journalists and the <mark>adequacy</mark> of initial death <mark>classification</mark> procedures.</p>
-
-<hr class="div">
-
+<p>Police Conclude Channel 8 Reporter Nattawut Ponglangka Died by Suicide After Ingesting Potassium Cyanide; One Man Charged with Illegal Possession of Hazardous Substance</p>
+<p>Thai police have concluded that Nattawut "Nass" Ponglangka, 35, a well-known field reporter and news anchor at Channel 8, died by suicide after ingesting potassium cyanide at his townhouse in Bang Kruai district, Nonthaburi, on the morning of 30 November 2025. The case, which had gripped Thailand for weeks amid widespread speculation over whether the death was suicide or homicide, was formally resolved following an extensive police investigation.</p>
+<p>Nattawut was initially found dead on his living room floor by friends who had been with him the night before. His death was originally attributed to sudden unexplained nocturnal death syndrome, locally known as lai tai, a condition associated with unexpected death during sleep. However, public suspicion grew rapidly after social media users raised the possibility of poisoning, and the cremation was halted when a government official publicly called for further investigation.</p>
+<p>On 6 December 2025, Thailand's Central Institute of Forensic Science released a toxicology report confirming lethal levels of cyanide in both his bloodstream and stomach, sufficient to cause rapid death. Police immediately launched a formal investigation, summoning five close associates who had been present or in contact with Nattawut around the time of his death.</p>
+<p>CCTV footage from inside the property proved decisive. It showed Nattawut retrieving a cyanide packet from a computer desk at 6:19 am. Approximately 40 seconds later, he returned the packet to the same location. No other person was seen entering the room during that period, ruling out third-party involvement.</p>
+<p>A man identified only as Kitti subsequently admitted to police that he had supplied cyanide to Nattawut on multiple occasions from October, having obtained the substance from a gold shop where he worked. A separate colleague, Sarawat "Ice" Kijpanit, a fellow Channel 8 news anchor, surrendered a package of cyanide to investigators, stating he had retrieved it from Nattawut's home. Chat logs showing Nattawut discussing the procurement of cyanide were also handed to police by his supervisor, Phutta Apiwan.</p>
+<p>Dep Comm Pol Maj Gen Atthapol Anusit confirmed that investigators had concluded the death was self-inflicted. Kitti was formally charged with illegal possession of a Type-3 hazardous substance under Thai law. Police said the case would also serve as a benchmark for improving crime scene investigation procedures in Thailand, noting that the initial misclassification of the death had complicated the inquiry.</p>
+<p>Nattawut had been the recipient of the Thep Narai Nakarat Award for Outstanding Field Reporter in 2025. Friends who testified described him as appearing cheerful and enthusiastic about future plans on the night before his death, with no signs of suicidal ideation. The case drew national attention not only for its tragic outcome but also for raising questions about occupational stress among journalists and the adequacy of initial death classification procedures.</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 2 — คำแปลภาษาไทย</div>
-<p>ตำรวจ<mark>สรุป</mark>ผู้สื่อข่าว Channel 8 ณัฐวุฒิ ปงลังกา <mark>เสียชีวิตด้วยตัวเอง</mark>หลัง<mark>กินไซยไนด์</mark> ชายถูก<mark>ตั้งข้อหา</mark>ครอบครองสาร<mark>อันตรายผิดกฎหมาย</mark></p>
-
-<hr class="div">
-
-<p>ตำรวจไทย<mark>สรุป</mark>ว่า ณัฐวุฒิ "แนส" ปงลังกา อายุ 35 ปี <mark>ผู้สื่อข่าว</mark>และ<mark>ผู้ประกาศข่าว</mark>ชื่อดังของ Channel 8 <mark>เสียชีวิตด้วยตนเอง</mark>หลัง<mark>กิน</mark>โพแตสเซียมไซยไนด์ที่บ้านในอำเภอบางครุย จังหวัดนนทบุรี เมื่อเช้าวันที่ 30 พฤศจิกายน 2568 คดีนี้<mark>คลี่คลาย</mark>อย่างเป็นทางการแล้วหลังการสืบสวนอย่างละเอียด</p>
-
-<p>เดิมทีเหตุผลการเสียชีวิตถูกระบุว่าเป็น<mark>โรคตายในยามหลับโดยไม่ทราบสาเหตุ</mark> (ไหลตาย) แต่สื่อสังคมออนไลน์<mark>ตั้งข้อสงสัย</mark>เรื่องการถูก<mark>วางยาพิษ</mark>จนมีการ<mark>สั่งระงับ</mark>การ<mark>เผาศพ</mark></p>
-
-<p><mark>ภาพจากกล้องวงจร</mark> ภายในบ้านพิสูจน์<mark>ชัดเจน</mark>ว่าณัฐวุฒิ<mark>หยิบ</mark>ซอง<mark>ไซยไนด์</mark>จากโต๊ะคอมพิวเตอร์เมื่อเวลา 06:19 น. แล้วนำกลับคืนที่เดิมหลังจากนั้น 40 วินาที ไม่ปรากฟังดูว่ามีบุคคลอื่นเข้ามาในห้องเลย ทำให้<mark>ตัดความเป็นไปได้</mark>ว่าไม่มีบุคคลที่สามเข้ามาเกี่ยวข้อง</p>
-
-<p>ชายชื่อกิตติให้การ<mark>ยอมรับ</mark>ว่าตน<mark>จัดหา</mark>ไซยไนด์ให้ณัฐวุฒิหลายครั้งนับตั้งแต่เดือนตุลาคม โดยได้สาร<mark>ครอบครอง</mark>จากร้านทองคำที่ตนทำงานอยู่ เพื่อนร่วมงานชื่อสรวัสร์ "ไอซ์" ก଴จปนิต ช่วย<mark>ส่งมอบ</mark>ซองไซยไนด์อีกชุดให้<mark>นักสืบ</mark> พุธ อภิวัญน์<mark>หัวหน้า</mark>ของณัฐวุฒิ ยังส่งมอบ<mark>บันทึกการสนทนา</mark>ที่แสดงให้เห็นว่ามีการคุยเรื่องการหาไซยไนด์</p>
-
-<p>พล.ต.ต.อ.อัทธพล อนุสิทธิ์ <mark>ยืนยัน</mark>ว่าการเสียชีวิต<mark>เป็นฟีมือตนเอง</mark> กิตติถูก<mark>ตั้งข้อหาครอบครอง</mark>สาร<mark>อันตรายประเภท 3</mark>โดยผิดกฎหมาย คดีนี้ยัง<mark>เป็นบรรทัดฐาน</mark>สำหรับปรับปรุง<mark>ขั้นตอนการสอบสวน</mark>คดีอาญาในประเทศไทย</p>
-
-<hr class="div">
-
+<p>ตำรวจสรุปผู้สื่อข่าว Channel 8 ณัฐวุฒิ ปงลังกา เสียชีวิตด้วยตัวเองหลังกินไซยไนด์ ชายถูกตั้งข้อหาครอบครองสารอันตรายผิดกฎหมาย</p>
+<p>ตำรวจไทยสรุปว่า ณัฐวุฒิ "แนส" ปงลังกา อายุ 35 ปี ผู้สื่อข่าวและผู้ประกาศข่าวชื่อดังของ Channel 8 เสียชีวิตด้วยตนเองหลังกินโพแตสเซียมไซยไนด์ที่บ้านในอำเภอบางครุย จังหวัดนนทบุรี เมื่อเช้าวันที่ 30 พฤศจิกายน 2568 คดีนี้คลี่คลายอย่างเป็นทางการแล้วหลังการสืบสวนอย่างละเอียด</p>
+<p>เดิมทีเหตุผลการเสียชีวิตถูกระบุว่าเป็นโรคตายในยามหลับโดยไม่ทราบสาเหตุ (ไหลตาย) แต่สื่อสังคมออนไลน์ตั้งข้อสงสัยเรื่องการถูกวางยาพิษจนมีการสั่งระงับการเผาศพ</p>
+<p>ภาพจากกล้องวงจร ภายในบ้านพิสูจน์ชัดเจนว่าณัฐวุฒิหยิบซองไซยไนด์จากโต๊ะคอมพิวเตอร์เมื่อเวลา 06:19 น. แล้วนำกลับคืนที่เดิมหลังจากนั้น 40 วินาที ไม่ปรากฟังดูว่ามีบุคคลอื่นเข้ามาในห้องเลย ทำให้ตัดความเป็นไปได้ว่าไม่มีบุคคลที่สามเข้ามาเกี่ยวข้อง</p>
+<p>ชายชื่อกิตติให้การยอมรับว่าตนจัดหาไซยไนด์ให้ณัฐวุฒิหลายครั้งนับตั้งแต่เดือนตุลาคม โดยได้สารครอบครองจากร้านทองคำที่ตนทำงานอยู่ เพื่อนร่วมงานชื่อสรวัสร์ "ไอซ์" ก଴จปนิต ช่วยส่งมอบซองไซยไนด์อีกชุดให้นักสืบ พุธ อภิวัญน์หัวหน้าของณัฐวุฒิ ยังส่งมอบบันทึกการสนทนาที่แสดงให้เห็นว่ามีการคุยเรื่องการหาไซยไนด์</p>
+<p>พล.ต.ต.อ.อัทธพล อนุสิทธิ์ ยืนยันว่าการเสียชีวิตเป็นฟีมือตนเอง กิตติถูกตั้งข้อหาครอบครองสารอันตรายประเภท 3โดยผิดกฎหมาย คดีนี้ยังเป็นบรรทัดฐานสำหรับปรับปรุงขั้นตอนการสอบสวนคดีอาญาในประเทศไทย</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 3 — Vocabulary Table (30 Words)</div>
-<hr class="div">
-
-<div class="headline" style="margin-top: 20px; font-size: 22px;">Part 4 — Anki Format</div>
 
 
 <a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
