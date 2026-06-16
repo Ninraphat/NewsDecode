@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+document.addEventListener('click', function(e) {
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
+  }
+});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily News Decode – 2026-06-07</title>
@@ -47,43 +61,20 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
-<p>Ex-<mark>Convict</mark> <mark>Arrested</mark> After <mark>Allegedly</mark> <mark>Sexually Assaulting</mark> and <mark>Murdering</mark> 12-Year-Old <mark>Stepdaughter</mark> in Nong Bua Lamphu</p>
-
-<hr class="div">
-
-<p>Police in Si Bun Rueang district, Nong Bua Lamphu province, <mark>apprehended</mark> a 38-year-old man identified as Pornchai on 25 May following the <mark>alleged</mark> <mark>sexual assault</mark> and <mark>murder</mark> of his 12-year-old <mark>stepdaughter</mark>, known as Amy, and a <mark>knife attack</mark> on his 33-year-old wife, On-uma. The <mark>suspect</mark> was found to be under the <mark>influence</mark> of <mark>narcotics</mark> at the time of his <mark>arrest</mark> and reportedly <mark>smiled</mark> at officers during the <mark>apprehension</mark>.</p>
-
-<p>Officers from Si Bun Rueang Police Station were <mark>dispatched</mark> to a <mark>residence</mark> in the district after Amy's grandfather <mark>discovered</mark> the scene and contacted her mother. The girl had failed to attend school, prompting concern. <mark>Investigators</mark> found Amy's body outside a bathroom at the rear of the <mark>property</mark>. Both of her arms and legs had been <mark>bound</mark> with rope, and a cloth and rope were <mark>wrapped</mark> around her neck. Multiple <mark>knife wounds</mark> were found across her body. <mark>Investigators</mark> <mark>suspect</mark> the child was <mark>sexually assaulted</mark> prior to being killed. Her body was <mark>transferred</mark> to Loei Hospital for a full <mark>autopsy</mark>.</p>
-
-<p>During <mark>interrogation</mark>, Pornchai <mark>confessed</mark> to the crimes. He told police that on the evening of 23 May, during the village's traditional <mark>Bun Bang Fai</mark> rocket festival, he observed a man speaking with his wife and <mark>stepdaughter</mark> and became <mark>intensely jealous</mark>. He subsequently <mark>forced</mark> both <mark>victims</mark> back to the house. He then <mark>consumed</mark> a <mark>methamphetamine</mark> pill and, under what <mark>investigators</mark> described as a <mark>drug-induced psychosis</mark>, carried out the <mark>assault</mark> on both women and killed the girl. He <mark>concealed</mark> the child's body in a <mark>storage room</mark> at the rear of the <mark>property</mark> before <mark>fleeing</mark>.</p>
-
-<p>Police <mark>confirmed</mark> through a <mark>urine test</mark> that <mark>illegal narcotics</mark> were present in Pornchai's system. He had a prior <mark>criminal record</mark>, having been previously <mark>convicted</mark> and <mark>imprisoned</mark> for <mark>drug offences</mark> and the <mark>sexual assault</mark> of an elderly woman in the same district. Following his earlier <mark>release from prison</mark>, he lived with his parents before entering into a relationship with On-uma. The couple had been together for only three to five months before the <mark>alleged</mark> attack.</p>
-
-<p>Thai media <mark>portrayed</mark> Amy as a <mark>diligent</mark> student with plans to study abroad, supported by relatives living overseas. The case has drawn significant public attention and <mark>renewed</mark> calls for <mark>stricter</mark> <mark>monitoring</mark> of <mark>ex-convicts</mark> and tougher <mark>drug enforcement</mark> in rural communities.</p>
-
-<hr class="div">
-
+<p>Ex-Convict Arrested After Allegedly Sexually Assaulting and Murdering 12-Year-Old Stepdaughter in Nong Bua Lamphu</p>
+<p>Police in Si Bun Rueang district, Nong Bua Lamphu province, apprehended a 38-year-old man identified as Pornchai on 25 May following the alleged sexual assault and murder of his 12-year-old stepdaughter, known as Amy, and a knife attack on his 33-year-old wife, On-uma. The suspect was found to be under the influence of narcotics at the time of his arrest and reportedly smiled at officers during the apprehension.</p>
+<p>Officers from Si Bun Rueang Police Station were dispatched to a residence in the district after Amy's grandfather discovered the scene and contacted her mother. The girl had failed to attend school, prompting concern. Investigators found Amy's body outside a bathroom at the rear of the property. Both of her arms and legs had been bound with rope, and a cloth and rope were wrapped around her neck. Multiple knife wounds were found across her body. Investigators suspect the child was sexually assaulted prior to being killed. Her body was transferred to Loei Hospital for a full autopsy.</p>
+<p>During interrogation, Pornchai confessed to the crimes. He told police that on the evening of 23 May, during the village's traditional Bun Bang Fai rocket festival, he observed a man speaking with his wife and stepdaughter and became intensely jealous. He subsequently forced both victims back to the house. He then consumed a methamphetamine pill and, under what investigators described as a drug-induced psychosis, carried out the assault on both women and killed the girl. He concealed the child's body in a storage room at the rear of the property before fleeing.</p>
+<p>Police confirmed through a urine test that illegal narcotics were present in Pornchai's system. He had a prior criminal record, having been previously convicted and imprisoned for drug offences and the sexual assault of an elderly woman in the same district. Following his earlier release from prison, he lived with his parents before entering into a relationship with On-uma. The couple had been together for only three to five months before the alleged attack.</p>
+<p>Thai media portrayed Amy as a diligent student with plans to study abroad, supported by relatives living overseas. The case has drawn significant public attention and renewed calls for stricter monitoring of ex-convicts and tougher drug enforcement in rural communities.</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 2 — คำแปลภาษาไทย</div>
-<p><mark>อดีตนักโทษ</mark>ถูก<mark>จับกุม</mark>หลังถูกกล่าวหาว่า<mark>ข่มขืนกระทำชำเรา</mark>และ<mark>สังหาร</mark>ลูกเลี้ยงวัย 12 ปี ในจังหวัดหนองบัวลำภู</p>
-
-<hr class="div">
-
-<p>ตำรวจอำเภอศรีบุญเรือง จังหวัดหนองบัวลำภู <mark>จับกุม</mark>ชายอายุ 38 ปีชื่อพรชัย เมื่อวันที่ 25 พฤษภาคม หลังถูกกล่าวหาว่า<mark>ข่มขืนกระทำชำเรา</mark>และ<mark>สังหาร</mark>เด็กหญิงอายุ 12 ปีที่รู้จักกันในนาม "เอมี่" ซึ่งเป็น<mark>ลูกเลี้ยง</mark>ของตน รวมถึง<mark>ทำร้ายร่างกาย</mark>ด้วยมีดภรรยาอายุ 33 ปีชื่ออ้นอุมา <mark>ผู้ต้องสงสัย</mark>อยู่ภายใต้<mark>ฤทธิ์ยาเสพติด</mark>ขณะถูก<mark>จับกุม</mark> และรายงานระบุว่าเขา<mark>ยิ้ม</mark>ใส่เจ้าหน้าที่ระหว่าง<mark>การควบคุมตัว</mark></p>
-
-<p>เจ้าหน้าที่พบ<mark>ศพ</mark>เอมี่นอนอยู่นอกห้องน้ำด้านหลัง<mark>บ้าน</mark> ทั้งแขนและขาถูก<mark>มัด</mark>ด้วยเชือก และมีผ้าพันรอบคอ พบ<mark>บาดแผล</mark>จากมีดหลายแห่งทั่วร่างกาย <mark>นักสืบสงสัย</mark>ว่าเด็กถูก<mark>ข่มขืนกระทำชำเรา</mark>ก่อนถูกฆ่า <mark>ศพ</mark>ถูกส่งไปยังโรงพยาบาลเลยเพื่อ<mark>ชันสูตรพลิกศพ</mark>อย่างละเอียด</p>
-
-<p>ระหว่าง<mark>การสอบสวน</mark> พรชัย<mark>รับสารภาพ</mark>ว่าคืนวันที่ 23 พฤษภาคม ระหว่างงานประเพณี<mark>บุญบั้งไฟ</mark> เขาเห็นชายแปลกหน้าคุยกับภรรยาและ<mark>ลูกเลี้ยง</mark> จึง<mark>หึงหวงอย่างรุนแรง</mark> จากนั้น<mark>บังคับ</mark>ทั้งสองกลับบ้านแล้ว<mark>กิน</mark>ยาบ้าหนึ่งเม็ด ก่อนก่อเหตุภายใต้อาการ<mark>จิตหลอนจากยาเสพติด</mark> เขา<mark>ซ่อน</mark>ร่างเด็กไว้ใน<mark>ห้องเก็บของ</mark>ก่อน<mark>หลบหนี</mark></p>
-
-<p>ตำรวจ<mark>ยืนยัน</mark>ผ่าน<mark>การตรวจปัสสาวะ</mark>ว่าพบ<mark>ยาเสพติดผิดกฎหมาย</mark>ในร่างกายพรชัย ซึ่งมี<mark>ประวัติอาชญากรรม</mark>มาก่อน เคยถูก<mark>ตัดสินลงโทษ</mark>และ<mark>คุมขัง</mark>ในคดี<mark>ยาเสพติด</mark>และ<mark>ข่มขืนกระทำชำเรา</mark>ผู้หญิงสูงอายุในอำเภอเดียวกัน หลัง<mark>ได้รับการปล่อยตัวจากเรือนจำ</mark> อยู่กับพ่อแม่ก่อนจะเริ่ม<mark>ความสัมพันธ์</mark>กับอ้นอุมา ทั้งคู่คบหากันเพียงสามถึงห้าเดือนก่อนเกิดเหตุ</p>
-
-<p>สื่อไทย<mark>บรรยาย</mark>ว่าเอมี่เป็นนักเรียนที่<mark>ขยันหมั่นเพียร</mark> มีแผนจะไปศึกษาต่อในต่างประเทศ คดีนี้จุดกระแส<mark>เรียกร้อง</mark>ให้มีการ<mark>ติดตาม</mark>อดีตนักโทษอย่างเข้มงวดและ<mark>บังคับใช้กฎหมายยาเสพติด</mark>อย่างจริงจังในพื้นที่ชนบท</p>
-
-<hr class="div">
-
+<p>อดีตนักโทษถูกจับกุมหลังถูกกล่าวหาว่าข่มขืนกระทำชำเราและสังหารลูกเลี้ยงวัย 12 ปี ในจังหวัดหนองบัวลำภู</p>
+<p>ตำรวจอำเภอศรีบุญเรือง จังหวัดหนองบัวลำภู จับกุมชายอายุ 38 ปีชื่อพรชัย เมื่อวันที่ 25 พฤษภาคม หลังถูกกล่าวหาว่าข่มขืนกระทำชำเราและสังหารเด็กหญิงอายุ 12 ปีที่รู้จักกันในนาม "เอมี่" ซึ่งเป็นลูกเลี้ยงของตน รวมถึงทำร้ายร่างกายด้วยมีดภรรยาอายุ 33 ปีชื่ออ้นอุมา ผู้ต้องสงสัยอยู่ภายใต้ฤทธิ์ยาเสพติดขณะถูกจับกุม และรายงานระบุว่าเขายิ้มใส่เจ้าหน้าที่ระหว่างการควบคุมตัว</p>
+<p>เจ้าหน้าที่พบศพเอมี่นอนอยู่นอกห้องน้ำด้านหลังบ้าน ทั้งแขนและขาถูกมัดด้วยเชือก และมีผ้าพันรอบคอ พบบาดแผลจากมีดหลายแห่งทั่วร่างกาย นักสืบสงสัยว่าเด็กถูกข่มขืนกระทำชำเราก่อนถูกฆ่า ศพถูกส่งไปยังโรงพยาบาลเลยเพื่อชันสูตรพลิกศพอย่างละเอียด</p>
+<p>ระหว่างการสอบสวน พรชัยรับสารภาพว่าคืนวันที่ 23 พฤษภาคม ระหว่างงานประเพณีบุญบั้งไฟ เขาเห็นชายแปลกหน้าคุยกับภรรยาและลูกเลี้ยง จึงหึงหวงอย่างรุนแรง จากนั้นบังคับทั้งสองกลับบ้านแล้วกินยาบ้าหนึ่งเม็ด ก่อนก่อเหตุภายใต้อาการจิตหลอนจากยาเสพติด เขาซ่อนร่างเด็กไว้ในห้องเก็บของก่อนหลบหนี</p>
+<p>ตำรวจยืนยันผ่านการตรวจปัสสาวะว่าพบยาเสพติดผิดกฎหมายในร่างกายพรชัย ซึ่งมีประวัติอาชญากรรมมาก่อน เคยถูกตัดสินลงโทษและคุมขังในคดียาเสพติดและข่มขืนกระทำชำเราผู้หญิงสูงอายุในอำเภอเดียวกัน หลังได้รับการปล่อยตัวจากเรือนจำ อยู่กับพ่อแม่ก่อนจะเริ่มความสัมพันธ์กับอ้นอุมา ทั้งคู่คบหากันเพียงสามถึงห้าเดือนก่อนเกิดเหตุ</p>
+<p>สื่อไทยบรรยายว่าเอมี่เป็นนักเรียนที่ขยันหมั่นเพียร มีแผนจะไปศึกษาต่อในต่างประเทศ คดีนี้จุดกระแสเรียกร้องให้มีการติดตามอดีตนักโทษอย่างเข้มงวดและบังคับใช้กฎหมายยาเสพติดอย่างจริงจังในพื้นที่ชนบท</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 3 — Vocabulary Table (30 Words)</div>
-<hr class="div">
-
-<div class="headline" style="margin-top: 20px; font-size: 22px;">Part 4 — Anki Format</div>
 
 
 <a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
