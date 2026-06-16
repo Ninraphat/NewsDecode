@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily News Decode - Homepage</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg-color: #faf9f6; --text-main: #1a1a1a; --text-muted: #666666; --accent: #8b1a1a; --border-color: #e5e5e5; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background-color: var(--bg-color); color: var(--text-main); font-family: 'Inter', sans-serif; line-height: 1.6; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+  header { text-align: center; padding: 48px 0 24px; border-bottom: 1px solid var(--border-color); margin-bottom: 40px; }
+  .eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 12px; }
+  .site-title { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .site-title span { color: var(--accent); }
+  .date-bar { font-size: 12px; color: var(--text-muted); margin-top: 16px; }
+  .section-label { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid var(--text-main); display: inline-block; padding-bottom: 4px; margin-bottom: 24px; }
+  .featured-section { margin-bottom: 56px; }
+  /* ส่วนนี้คือส่วนที่จะให้สคริปต์อัปเดต */
+  #featured-news-container a { display: block; text-decoration: none; color: inherit; background: #fff; padding: 40px; border: 1px solid var(--border-color); transition: all 0.3s ease; }
+  #featured-news-container a:hover { box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-color: var(--accent); }
+  #featured-news-container h3 { font-family: 'Playfair Display', serif; font-size: 32px; line-height: 1.2; margin-bottom: 16px; }
+  .grid-section { margin-bottom: 64px; }
+  .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 32px; }
+  .grid-card { display: flex; flex-direction: column; text-decoration: none; color: inherit; padding-bottom: 24px; border-bottom: 1px solid var(--border-color); transition: opacity 0.2s ease; }
+  .grid-card:hover { opacity: 0.7; }
+  .grid-card h3 { font-family: 'Playfair Display', serif; font-size: 20px; line-height: 1.3; margin-bottom: 8px; }
+  .grid-card p { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; flex-grow: 1; }
+  footer { text-align: center; padding: 32px 0; border-top: 1px solid var(--border-color); font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="eyebrow">Bilingual Daily News & Vocabulary</div>
+    <div class="site-title">Daily <span>News</span> Decode</div>
+    <div class="date-bar">Updated: Tuesday, 16 June 2026</div>
+  </header>
+
+  <section class="featured-section">
+    <div class="section-label">Today's Highlight</div>
+    <div id="featured-news-container">
+        </div>
+  </section>
+
+  <section class="grid-section">
+    <div class="section-label">June 2026 Archive</div>
+    <div class="news-grid">
+        </div>
+  </section>
+</div>
+<footer>© 2026 Daily News Decode • Built for Language Learning</footer>
+</body>
+</html>
