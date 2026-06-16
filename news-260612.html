@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+document.addEventListener('click', function(e) {
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
+  }
+});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily News Decode – 2026-06-12</title>
@@ -47,45 +61,21 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
-<p>After 11 Years, Thai Court <mark>Sentences</mark> Two Uyghur Men to <mark>Death</mark> for 2015 Erawan Shrine <mark>Bombing</mark> That Killed 20</p>
-
-<hr class="div">
-
-<p>The Bangkok South Criminal Court on Thursday <mark>delivered</mark> a long-awaited <mark>verdict</mark> in Thailand's <mark>deadliest</mark> bombing case, <mark>sentencing</mark> two ethnic Uyghur men from China's Xinjiang region to death for <mark>carrying out</mark> the August 2015 <mark>attack</mark> on the Erawan Shrine, a popular <mark>tourist</mark> site at Bangkok's Ratchaprasong <mark>intersection</mark>.</p>
-
-<p>A four-judge <mark>panel</mark> <mark>convicted</mark> Bilal Mohammed, 41 — also known by the <mark>alias</mark> Adem Karadag — and Mieraili Yusufu, 36, of <mark>premeditated</mark> and <mark>attempted murder</mark>, ruling that their actions amounted to <mark>terrorism</mark> and <mark>imposing</mark> the <mark>maximum punishment</mark> available under Thai law. The court found that on the evening of 17 August 2015, Mieraili <mark>secretly handed</mark> a <mark>concealed</mark> <mark>explosive device</mark> to Mohammed, who then <mark>placed</mark> the bomb inside the <mark>crowded</mark> shrine area before <mark>walking away</mark>. Shortly afterward, Mieraili <mark>detonated</mark> the device, <mark>triggering</mark> an explosion that killed 20 people — six Thai citizens and 14 <mark>foreign nationals</mark>, including <mark>tourists</mark> from mainland China and Hong Kong — and <mark>injured</mark> more than 120 others.</p>
-
-<p>Prosecutors <mark>reconstructed</mark> the men's movements using <mark>CCTV footage</mark>, <mark>witness testimony</mark>, and <mark>forensic evidence</mark>. A taxi driver <mark>identified</mark> Mohammed as a <mark>passenger</mark> travelling from Soi Charoen Nakhon to Hua Lamphong railway station, while a <mark>tuk-tuk driver</mark> later identified him <mark>travelling</mark> from the station to the shrine wearing a yellow shirt. Separate <mark>witnesses</mark> placed Mieraili, wearing a purple shirt, on a similar route toward the CentralWorld shopping area. The court ruled that "the defendants <mark>committed</mark> a single act that <mark>violated multiple laws</mark>," and therefore <mark>imposed</mark> the <mark>death sentence</mark>, the <mark>harshest penalty</mark> available. Both men were also <mark>fined</mark> 1,000 baht each for <mark>carrying weapons</mark> in a public place without <mark>reasonable cause</mark>, and <mark>ordered</mark> to pay more than one million baht in <mark>damages</mark> for harm to <mark>public property</mark>.</p>
-
-<p>The case had taken more than a <mark>decade</mark> to reach a final <mark>verdict</mark>. It began in a <mark>military court</mark> in 2016, during a period of military rule following the 2014 coup, before later being <mark>transferred</mark> to a <mark>civilian</mark> court. The lengthy delay was <mark>attributed</mark> to <mark>multiple</mark> factors, including persistent <mark>difficulties</mark> finding a <mark>Uyghur-speaking</mark> <mark>interpreter</mark> acceptable to both the defendants and the court; the men <mark>rejected</mark> <mark>translators</mark> offered by the Chinese <mark>embassy</mark>. The defendants <mark>claimed</mark> they had suffered <mark>mistreatment</mark> and <mark>torture</mark> while in <mark>detention</mark> and that their <mark>confessions</mark> had been <mark>coerced</mark>. However, the judges ruled there was <mark>no evidence</mark> of <mark>torture</mark> and that <mark>investigators</mark> did not appear to have <mark>coerced</mark> the <mark>confessions</mark>.</p>
-
-<p>Following the <mark>verdict</mark>, Mieraili <mark>reacted</mark> angrily, stating: "<mark>RIP</mark> Thailand's justice system. I don't <mark>accept</mark> any of this. I didn't do anything wrong." Defence lawyer Choochat Kanpai told reporters the men would <mark>appeal</mark> the <mark>ruling</mark>, arguing that "many aspects of the case" had not been fully <mark>considered</mark>, including how the defendants were <mark>treated</mark> during the <mark>proceedings</mark>. International <mark>human rights organisations</mark>, including the International Commission of Jurists, have previously <mark>criticised</mark> the <mark>conduct</mark> and <mark>unusually lengthy duration</mark> of the trial.</p>
-
-<p>A third <mark>named suspect</mark>, Thai national Wanna Suansan, had been <mark>detained</mark> in 2017 on a <mark>warrant</mark> linked to the blast and <mark>charged</mark> with <mark>attempted murder</mark> and <mark>possession</mark> of <mark>bombs</mark> and <mark>weapons</mark>, but was <mark>acquitted</mark> in 2024. Police had originally <mark>named</mark> 17 <mark>suspects</mark> in connection with the attack, but only Mohammed and Mieraili were ever <mark>apprehended</mark>. Beijing <mark>welcomed</mark> the <mark>outcome</mark>, with officials describing the <mark>attackers</mark> as "totally <mark>inhumane</mark> and extremely <mark>heinous</mark>."</p>
-
-<hr class="div">
-
+<p>After 11 Years, Thai Court Sentences Two Uyghur Men to Death for 2015 Erawan Shrine Bombing That Killed 20</p>
+<p>The Bangkok South Criminal Court on Thursday delivered a long-awaited verdict in Thailand's deadliest bombing case, sentencing two ethnic Uyghur men from China's Xinjiang region to death for carrying out the August 2015 attack on the Erawan Shrine, a popular tourist site at Bangkok's Ratchaprasong intersection.</p>
+<p>A four-judge panel convicted Bilal Mohammed, 41 — also known by the alias Adem Karadag — and Mieraili Yusufu, 36, of premeditated and attempted murder, ruling that their actions amounted to terrorism and imposing the maximum punishment available under Thai law. The court found that on the evening of 17 August 2015, Mieraili secretly handed a concealed explosive device to Mohammed, who then placed the bomb inside the crowded shrine area before walking away. Shortly afterward, Mieraili detonated the device, triggering an explosion that killed 20 people — six Thai citizens and 14 foreign nationals, including tourists from mainland China and Hong Kong — and injured more than 120 others.</p>
+<p>Prosecutors reconstructed the men's movements using CCTV footage, witness testimony, and forensic evidence. A taxi driver identified Mohammed as a passenger travelling from Soi Charoen Nakhon to Hua Lamphong railway station, while a tuk-tuk driver later identified him travelling from the station to the shrine wearing a yellow shirt. Separate witnesses placed Mieraili, wearing a purple shirt, on a similar route toward the CentralWorld shopping area. The court ruled that "the defendants committed a single act that violated multiple laws," and therefore imposed the death sentence, the harshest penalty available. Both men were also fined 1,000 baht each for carrying weapons in a public place without reasonable cause, and ordered to pay more than one million baht in damages for harm to public property.</p>
+<p>The case had taken more than a decade to reach a final verdict. It began in a military court in 2016, during a period of military rule following the 2014 coup, before later being transferred to a civilian court. The lengthy delay was attributed to multiple factors, including persistent difficulties finding a Uyghur-speaking interpreter acceptable to both the defendants and the court; the men rejected translators offered by the Chinese embassy. The defendants claimed they had suffered mistreatment and torture while in detention and that their confessions had been coerced. However, the judges ruled there was no evidence of torture and that investigators did not appear to have coerced the confessions.</p>
+<p>Following the verdict, Mieraili reacted angrily, stating: "RIP Thailand's justice system. I don't accept any of this. I didn't do anything wrong." Defence lawyer Choochat Kanpai told reporters the men would appeal the ruling, arguing that "many aspects of the case" had not been fully considered, including how the defendants were treated during the proceedings. International human rights organisations, including the International Commission of Jurists, have previously criticised the conduct and unusually lengthy duration of the trial.</p>
+<p>A third named suspect, Thai national Wanna Suansan, had been detained in 2017 on a warrant linked to the blast and charged with attempted murder and possession of bombs and weapons, but was acquitted in 2024. Police had originally named 17 suspects in connection with the attack, but only Mohammed and Mieraili were ever apprehended. Beijing welcomed the outcome, with officials describing the attackers as "totally inhumane and extremely heinous."</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 2 — คำแปลภาษาไทย</div>
-<p>ผ่านไป 11 ปี ศาลไทย<mark>พิพากษาประหารชีวิต</mark>ชายอุยกูร์สองคน จากเหตุ<mark>ระเปิด</mark>ราชประสงค์ปี 2558 คร่าชีวิต 20 ราย</p>
-
-<hr class="div">
-
-<p>ศาลอาญากรุงเทพใต้<mark>อ่านคำพิพากษา</mark>ที่รอหลายปีเมื่อวันพุธ ในคดี<mark>ระเปิด</mark>ที่<mark>ร้ายแรง</mark>ที่สุดของประเทศไทย สั่ง<mark>ประหารชีวิต</mark>ชายชาวอุยกูร์จีนสองรายจากชายติเซียร์เซิยงจิง พ.ศ. 2558 ที่ตัดสี่ราชประสงค์</p>
-
-<p><mark>องค์คณะผู้พิพากษา</mark> 4 ท่าน <mark>มีคำพิพากษาว่ามีความผิด</mark>ชายชาวอุยกูร์สองคน ชื่อบิลออล มะฮะหมัด (อายุ 41 ปี) และมาหะลี ยูซูฟู (อายุ 36 ปี) ในข้อหา<mark>ฆ่าคนโดยไตร่ตรองไว้ก่อน</mark>และ<mark>พยายามฆ่า</mark>สรุปว่าเป็น<mark>การกระทำการก่อการร้าย</mark>จากการ<mark>ระเบิด</mark> บิลอาลรับ<mark>ระเปิด</mark>จากมาหะลีอย่าง<mark>ลีลบ</mark> แล้ว<mark>วาง</mark>ไว้หลังมูลนะซึ่ง<mark>แน่นหนาแน่นตา</mark>ก่อนเดินหนีออกไป จากนั้นอีกไม่นาน มาหะลีก็<mark>จุดชนวน</mark>ให้เกิดการระเปิด จนเสียชีวิต 20 ราย — เป็นคนไทย 6 ราย และ<mark>ชาวต่างชาติ</mark> 14 ราย — และ<mark>บาดเจ็บ</mark>อีกกว่า 120 ราย</p>
-
-<p>อัยการได้<mark>สันนษฐาน</mark>เส้นทางการเดอนทางการจาก<mark>ภาพจากกล้องวงจร การให้การพยาน</mark> และ<mark>หลักฐานนิติวิทยาศาสตร์</mark> ศาล<mark>วาง</mark>ว่า "<mark>จำเลย</mark>กระทำการเดียวแต่ผิด<mark>กฎหมายหลายงงหลัก</mark>" รับสงบโทษ<mark>สูงสุด</mark> ประหารชีวิต ได้<mark>ปรับไหม</mark>หชรึงงหลักชีวิตของตย27ฎหมายยี่ 1,000 บาตตรงรับข้อหา<mark>พกพของอายุฌลีลีผลงษยามสาฌา</mark></p>
-
-<p>คดีนี้ยืดเยื้อ<mark>อย่างยาวนาน</mark> จากเริ่มถึง<mark>สิบปี</mark>กระพี่จะได้ถรรลงข้อมูลจำงอ<mark>ศาลทหาร</mark> หลังรัฐประหารพิพากษา จาซรฉีรษะรึกถึงออกหมีหมาย<mark>ความล่าช้า</mark>มีหลายยี่องค์รวม<mark>ล่าช้า</mark>จารสถาปจีน<mark>ล่าช้า</mark>หรืออัยการของสองซลายไทยไม่ยอมรับ<mark>ผู้แปลสารชาวอุยกูร์</mark>ที่อายุปริมาตย31จึงมีข้อของจำเลยของยลงงงอยู่ขึ้นษของสีบิลลิอบลีสถิหลหลมุสาลระยะยาวของหลักฐานฉลงรรยายสิบปี</p>
-
-<p>หลังฟังคำพิพากษา ยูซูฟู<mark>แสดงปฏิกิริยาโกรธ</mark>กล่าวว่า "ขอ<mark>ไว้อาลัย</mark>บระประพิหารพยุฌตีสององรของไทย ฉัน<mark>ไม่ยอมรับ</mark>ยึยยังถิม่อจรงประอง" ส่วตีนี้ยรับสงสัยงยมติยิสะจะอุตยรฏรบกฎสอบจระฎระฎงงอยี่ยจาริงยะมีองษ์ค์รอบด้านการพิจารชาจะผยบยัน</p>
-
-<hr class="div">
-
+<p>ผ่านไป 11 ปี ศาลไทยพิพากษาประหารชีวิตชายอุยกูร์สองคน จากเหตุระเปิดราชประสงค์ปี 2558 คร่าชีวิต 20 ราย</p>
+<p>ศาลอาญากรุงเทพใต้อ่านคำพิพากษาที่รอหลายปีเมื่อวันพุธ ในคดีระเปิดที่ร้ายแรงที่สุดของประเทศไทย สั่งประหารชีวิตชายชาวอุยกูร์จีนสองรายจากชายติเซียร์เซิยงจิง พ.ศ. 2558 ที่ตัดสี่ราชประสงค์</p>
+<p>องค์คณะผู้พิพากษา 4 ท่าน มีคำพิพากษาว่ามีความผิดชายชาวอุยกูร์สองคน ชื่อบิลออล มะฮะหมัด (อายุ 41 ปี) และมาหะลี ยูซูฟู (อายุ 36 ปี) ในข้อหาฆ่าคนโดยไตร่ตรองไว้ก่อนและพยายามฆ่าสรุปว่าเป็นการกระทำการก่อการร้ายจากการระเบิด บิลอาลรับระเปิดจากมาหะลีอย่างลีลบ แล้ววางไว้หลังมูลนะซึ่งแน่นหนาแน่นตาก่อนเดินหนีออกไป จากนั้นอีกไม่นาน มาหะลีก็จุดชนวนให้เกิดการระเปิด จนเสียชีวิต 20 ราย — เป็นคนไทย 6 ราย และชาวต่างชาติ 14 ราย — และบาดเจ็บอีกกว่า 120 ราย</p>
+<p>อัยการได้สันนษฐานเส้นทางการเดอนทางการจากภาพจากกล้องวงจร การให้การพยาน และหลักฐานนิติวิทยาศาสตร์ ศาลวางว่า "จำเลยกระทำการเดียวแต่ผิดกฎหมายหลายงงหลัก" รับสงบโทษสูงสุด ประหารชีวิต ได้ปรับไหมหชรึงงหลักชีวิตของตย27ฎหมายยี่ 1,000 บาตตรงรับข้อหาพกพของอายุฌลีลีผลงษยามสาฌา</p>
+<p>คดีนี้ยืดเยื้ออย่างยาวนาน จากเริ่มถึงสิบปีกระพี่จะได้ถรรลงข้อมูลจำงอศาลทหาร หลังรัฐประหารพิพากษา จาซรฉีรษะรึกถึงออกหมีหมายความล่าช้ามีหลายยี่องค์รวมล่าช้าจารสถาปจีนล่าช้าหรืออัยการของสองซลายไทยไม่ยอมรับผู้แปลสารชาวอุยกูร์ที่อายุปริมาตย31จึงมีข้อของจำเลยของยลงงงอยู่ขึ้นษของสีบิลลิอบลีสถิหลหลมุสาลระยะยาวของหลักฐานฉลงรรยายสิบปี</p>
+<p>หลังฟังคำพิพากษา ยูซูฟูแสดงปฏิกิริยาโกรธกล่าวว่า "ขอไว้อาลัยบระประพิหารพยุฌตีสององรของไทย ฉันไม่ยอมรับยึยยังถิม่อจรงประอง" ส่วตีนี้ยรับสงสัยงยมติยิสะจะอุตยรฏรบกฎสอบจระฎระฎงงอยี่ยจาริงยะมีองษ์ค์รอบด้านการพิจารชาจะผยบยัน</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 3 — Vocabulary Table (30 Words)</div>
-<hr class="div">
-
-<div class="headline" style="margin-top: 20px; font-size: 22px;">Part 4 — Anki Format</div>
 
 
 <a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
