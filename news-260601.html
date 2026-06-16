@@ -3,12 +3,15 @@
 <head>
 <script>
 document.addEventListener('click', function(e) {
-  if (e.target.classList.contains('word-en')) {
-    e.target.style.display = 'none';
-    e.target.nextElementSibling.style.display = 'inline';
-  } else if (e.target.classList.contains('word-th')) {
-    e.target.style.display = 'none';
-    e.target.previousElementSibling.style.display = 'inline';
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
   }
 });
 </script>
@@ -58,46 +61,22 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
-<p>Sri Lankan Man <mark>Charged with Murder</mark> After <mark>Fatal Stabbing</mark> of Bangkok <mark>Peacemaker</mark></p>
-
-<hr class="div">
-
-<p>A Sri Lankan <mark>national</mark> has been <mark>arrested</mark> and <mark>formally charged</mark> with <mark>murder</mark> following a <mark>fatal stabbing</mark> in Bangkok's Prawet district on 29 May 2026. The <mark>suspect</mark>, identified as Apisek Racha, allegedly attempted to <mark>assault</mark> his acquaintance, 23-year-old Adiman Hayilapeh, with a knife on Soi Phatthanakan 61.</p>
-
-<p>A Thai man who <mark>intervened</mark> to stop the attack was <mark>stabbed</mark> in the left side and later <mark>succumbed</mark> to his <mark>injuries</mark> at a local hospital. The <mark>victim</mark> had stepped in as a <mark>peacemaker</mark>, attempting to <mark>de-escalate</mark> the violent <mark>confrontation</mark> between the two parties.</p>
-
-<p>Following the <mark>incident</mark>, Apisek <mark>fled the scene</mark>. Police <mark>traced</mark> his <mark>whereabouts</mark> to a residence on Soi Phatthanakan 76 after Adiman's friend <mark>alerted</mark> officers to his location. Authorities then <mark>proceeded</mark> with an <mark>arrest without a warrant</mark>, citing <mark>urgent circumstances</mark> and concerns that the <mark>suspect</mark> might <mark>flee</mark>, <mark>tamper</mark> with <mark>evidence</mark>, or <mark>pose</mark> a further danger to the public.</p>
-
-<p>Officers from Prawet Police Station <mark>confirmed</mark> they had <mark>sufficient evidence</mark> to <mark>pursue</mark> an <mark>arrest warrant</mark>, but chose to act immediately given the <mark>severity</mark> of the situation. The <mark>suspect</mark> was formally <mark>charged</mark> with <mark>premeditated murder</mark> and was <mark>informed</mark> of his legal rights at the time of <mark>apprehension</mark>.</p>
-
-<p>Police <mark>reported</mark> that Apisek <mark>acknowledged</mark> both the charge and his legal rights during the <mark>arrest procedure</mark>. He was subsequently <mark>transferred</mark> to <mark>investigators</mark> at Prawet Police Station for further <mark>legal proceedings</mark>.</p>
-
-<p>The case remains under <mark>active investigation</mark> as <mark>authorities</mark> continue the <mark>judicial process</mark>. The <mark>incident</mark> has raised broader concerns about <mark>interpersonal violence</mark> involving <mark>foreign nationals</mark> in Bangkok and the risks faced by ordinary citizens who <mark>intervene</mark> in <mark>altercations</mark>.</p>
-
-<hr class="div">
-
+<p>Sri Lankan Man Charged with Murder After Fatal Stabbing of Bangkok Peacemaker</p>
+<p>A Sri Lankan national has been arrested and formally charged with murder following a fatal stabbing in Bangkok's Prawet district on 29 May 2026. The suspect, identified as Apisek Racha, allegedly attempted to assault his acquaintance, 23-year-old Adiman Hayilapeh, with a knife on Soi Phatthanakan 61.</p>
+<p>A Thai man who intervened to stop the attack was stabbed in the left side and later succumbed to his injuries at a local hospital. The victim had stepped in as a peacemaker, attempting to de-escalate the violent confrontation between the two parties.</p>
+<p>Following the incident, Apisek fled the scene. Police traced his whereabouts to a residence on Soi Phatthanakan 76 after Adiman's friend alerted officers to his location. Authorities then proceeded with an arrest without a warrant, citing urgent circumstances and concerns that the suspect might flee, tamper with evidence, or pose a further danger to the public.</p>
+<p>Officers from Prawet Police Station confirmed they had sufficient evidence to pursue an arrest warrant, but chose to act immediately given the severity of the situation. The suspect was formally charged with premeditated murder and was informed of his legal rights at the time of apprehension.</p>
+<p>Police reported that Apisek acknowledged both the charge and his legal rights during the arrest procedure. He was subsequently transferred to investigators at Prawet Police Station for further legal proceedings.</p>
+<p>The case remains under active investigation as authorities continue the judicial process. The incident has raised broader concerns about interpersonal violence involving foreign nationals in Bangkok and the risks faced by ordinary citizens who intervene in altercations.</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 2 — Thai Translation</div>
-<p>ชายชาวศรีลังกา <mark>ถูกตั้งข้อหาฆาตกรรม</mark> หลัง <mark>แทงคนตาย</mark> บนถนนพัฒนาการ กรุงเทพฯ</p>
-
-<hr class="div">
-
-<p>ชายชาวศรีลังกา <mark>สัญชาติต่างด้าว</mark> ถูก <mark>จับกุม</mark> และ <mark>ตั้งข้อกล่าวหาอย่างเป็นทางการ</mark> ในข้อหา <mark>ฆาตกรรม</mark> จากเหตุการณ์ <mark>แทงคนจนเสียชีวิต</mark> ในเขตประเวศ กรุงเทพมหานคร เมื่อวันที่ 29 พฤษภาคม 2569 <mark>ผู้ต้องสงสัย</mark> ชื่ออภิเสก ราชา ถูกกล่าวหาว่าพยายาม <mark>ทำร้ายร่างกาย</mark> อดิมัน ฮายิลาเป อายุ 23 ปี ด้วยมีดในซอยพัฒนาการ 61</p>
-
-<p>ชายไทยรายหนึ่งซึ่ง <mark>เข้าแทรกแซง</mark> เพื่อหยุดการโจมตี ถูก <mark>แทง</mark> ที่สีข้างซ้ายและต่อมา <mark>เสียชีวิต</mark> จาก <mark>บาดแผล</mark> ที่โรงพยาบาลในพื้นที่ <mark>ผู้เสียชีวิต</mark> เข้าร่วมในฐานะ <mark>คนกลาง</mark> พยายาม <mark>คลี่คลายสถานการณ์</mark> การ <mark>เผชิญหน้า</mark> ที่รุนแรงระหว่างสองฝ่าย</p>
-
-<p>หลังเกิด <mark>เหตุการณ์</mark> อภิเสก <mark>หลบหนีออกจากที่เกิดเหตุ</mark> ตำรวจ <mark>ติดตาม</mark> <mark>ที่อยู่</mark> ของเขาไปยังที่พักในซอยพัฒนาการ 76 หลังจากเพื่อนของอดิมัน <mark>แจ้ง</mark> เจ้าหน้าที่ถึงตำแหน่งที่ซ่อนตัว เจ้าหน้าที่จึง <mark>ดำเนินการ</mark> <mark>จับกุมโดยไม่มีหมายจับ</mark> โดยอ้าง <mark>สถานการณ์เร่งด่วน</mark> และความกังวลว่า <mark>ผู้ต้องสงสัย</mark> อาจ <mark>หลบหนี</mark>, <mark>ทำลายหลักฐาน</mark> หรือ <mark>เป็นภัยอันตราย</mark> ต่อสาธารณะเพิ่มเติม</p>
-
-<p>เจ้าหน้าที่จากสถานีตำรวจนครบาลประเวศ <mark>ยืนยัน</mark> ว่ามี <mark>หลักฐานเพียงพอ</mark> ในการ <mark>ขอหมายจับ</mark> แต่เลือกที่จะดำเนินการทันทีเมื่อพิจารณาถึง <mark>ความร้ายแรง</mark> ของสถานการณ์ <mark>ผู้ต้องสงสัย</mark> ถูก <mark>ตั้งข้อหาฆ่าคนตายโดยเจตนา</mark> อย่างเป็นทางการ และได้รับการ <mark>แจ้งสิทธิ์ทางกฎหมาย</mark> ณ เวลา <mark>ควบคุมตัว</mark></p>
-
-<p>ตำรวจ <mark>รายงาน</mark> ว่าอภิเสก <mark>รับทราบ</mark> ทั้งข้อกล่าวหาและสิทธิ์ทางกฎหมายของตนในระหว่าง <mark>กระบวนการจับกุม</mark> จากนั้นเขาถูก <mark>ส่งตัว</mark> ให้ <mark>พนักงานสอบสวน</mark> ที่สถานีตำรวจประเวศเพื่อ <mark>ดำเนินการทางกฎหมาย</mark> ต่อไป</p>
-
-<p>คดียังอยู่ระหว่าง <mark>การสอบสวนอย่างต่อเนื่อง</mark> เหตุการณ์นี้สร้างความกังวลในวงกว้างเกี่ยวกับ <mark>ความรุนแรงระหว่างบุคคล</mark> ที่เกี่ยวข้องกับ <mark>ชาวต่างชาติ</mark> ในกรุงเทพฯ และความเสี่ยงที่ประชาชนทั่วไปต้องเผชิญเมื่อ <mark>เข้าแทรกแซง</mark> ใน <mark>การทะเลาะวิวาท</mark></p>
-
-<hr class="div">
-
+<p>ชายชาวศรีลังกา ถูกตั้งข้อหาฆาตกรรม หลัง แทงคนตาย บนถนนพัฒนาการ กรุงเทพฯ</p>
+<p>ชายชาวศรีลังกา สัญชาติต่างด้าว ถูก จับกุม และ ตั้งข้อกล่าวหาอย่างเป็นทางการ ในข้อหา ฆาตกรรม จากเหตุการณ์ แทงคนจนเสียชีวิต ในเขตประเวศ กรุงเทพมหานคร เมื่อวันที่ 29 พฤษภาคม 2569 ผู้ต้องสงสัย ชื่ออภิเสก ราชา ถูกกล่าวหาว่าพยายาม ทำร้ายร่างกาย อดิมัน ฮายิลาเป อายุ 23 ปี ด้วยมีดในซอยพัฒนาการ 61</p>
+<p>ชายไทยรายหนึ่งซึ่ง เข้าแทรกแซง เพื่อหยุดการโจมตี ถูก แทง ที่สีข้างซ้ายและต่อมา เสียชีวิต จาก บาดแผล ที่โรงพยาบาลในพื้นที่ ผู้เสียชีวิต เข้าร่วมในฐานะ คนกลาง พยายาม คลี่คลายสถานการณ์ การ เผชิญหน้า ที่รุนแรงระหว่างสองฝ่าย</p>
+<p>หลังเกิด เหตุการณ์ อภิเสก หลบหนีออกจากที่เกิดเหตุ ตำรวจ ติดตาม ที่อยู่ ของเขาไปยังที่พักในซอยพัฒนาการ 76 หลังจากเพื่อนของอดิมัน แจ้ง เจ้าหน้าที่ถึงตำแหน่งที่ซ่อนตัว เจ้าหน้าที่จึง ดำเนินการ จับกุมโดยไม่มีหมายจับ โดยอ้าง สถานการณ์เร่งด่วน และความกังวลว่า ผู้ต้องสงสัย อาจ หลบหนี, ทำลายหลักฐาน หรือ เป็นภัยอันตราย ต่อสาธารณะเพิ่มเติม</p>
+<p>เจ้าหน้าที่จากสถานีตำรวจนครบาลประเวศ ยืนยัน ว่ามี หลักฐานเพียงพอ ในการ ขอหมายจับ แต่เลือกที่จะดำเนินการทันทีเมื่อพิจารณาถึง ความร้ายแรง ของสถานการณ์ ผู้ต้องสงสัย ถูก ตั้งข้อหาฆ่าคนตายโดยเจตนา อย่างเป็นทางการ และได้รับการ แจ้งสิทธิ์ทางกฎหมาย ณ เวลา ควบคุมตัว</p>
+<p>ตำรวจ รายงาน ว่าอภิเสก รับทราบ ทั้งข้อกล่าวหาและสิทธิ์ทางกฎหมายของตนในระหว่าง กระบวนการจับกุม จากนั้นเขาถูก ส่งตัว ให้ พนักงานสอบสวน ที่สถานีตำรวจประเวศเพื่อ ดำเนินการทางกฎหมาย ต่อไป</p>
+<p>คดียังอยู่ระหว่าง การสอบสวนอย่างต่อเนื่อง เหตุการณ์นี้สร้างความกังวลในวงกว้างเกี่ยวกับ ความรุนแรงระหว่างบุคคล ที่เกี่ยวข้องกับ ชาวต่างชาติ ในกรุงเทพฯ และความเสี่ยงที่ประชาชนทั่วไปต้องเผชิญเมื่อ เข้าแทรกแซง ใน การทะเลาะวิวาท</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 3 — Vocabulary Table (30 Words)</div>
-<hr class="div">
-
 
 
 <a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
