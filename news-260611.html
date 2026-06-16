@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+document.addEventListener('click', function(e) {
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
+  }
+});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily News Decode – 2026-06-11</title>
@@ -47,43 +61,20 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
-<p><mark>Extortion</mark> Claims Against Deputy PM Phiphat <mark>Spark</mark> Political <mark>Controversy</mark>; Sondhi Limthongkul <mark>Threatens Legal Action</mark> After <mark>Defamation</mark> Prison Term</p>
-
-<hr class="div">
-
-<p>Two overlapping legal and political <mark>controversies</mark> dominated Thai headlines on Wednesday, both <mark>involving</mark> veteran media personality Sondhi Limthongkul and touching on <mark>allegations</mark> of <mark>extortion</mark>, <mark>defamation</mark>, and the <mark>boundaries</mark> of press freedom in Thailand.</p>
-
-<p>The first <mark>controversy</mark> erupted on social media when a Facebook user identified as "Joe Montanee" <mark>alleged</mark> that a group of individuals had attempted to <mark>pressure</mark> Deputy Prime Minister and Transport Minister Phiphat Ratchakitprakarn into paying 5 million baht per month by <mark>threatening</mark> to <mark>dig up and publish</mark> damaging information about him and <mark>affiliated</mark> businesses within the PT Group. The <mark>alleged scheme</mark> reportedly failed. Political activist and former journalist Nuttha "Bow" Mahattana added <mark>fuel to the fire</mark> by writing on her own Facebook page that at least one prominent Thai media <mark>outlet</mark> was widely known within media circles for engaging in <mark>extortion</mark>, though she did not name the organisation directly.</p>
-
-<p>The <mark>allegation</mark> drew a <mark>cryptic</mark> comment from Prime Minister Anutin Charnvirakul's official social media account, which <mark>responded</mark> to Mr Phiphat's post with the words "thank you for providing another perspective." When questioned by reporters at Government House, Mr Anutin smiled and said he did not know what they were referring to, <mark>declining</mark> to confirm whether he had personally written the comment or whether it had been posted by a social media <mark>administrator</mark>. The <mark>vague</mark> response further <mark>stoked</mark> public <mark>speculation</mark> about political <mark>undercurrents</mark> behind the affair. No formal <mark>complaint</mark> has been <mark>filed</mark> and no government <mark>agency</mark> has yet <mark>verified</mark> the <mark>extortion</mark> claim.</p>
-
-<p>In a directly related development, Sondhi Limthongkul, 78, founder of Manager Media Group and veteran leader of the People's Alliance for Democracy, <mark>threatened</mark> to take <mark>legal action</mark> after the Criminal Court on Tuesday <mark>sentenced</mark> him to four months in prison <mark>without suspension</mark> for <mark>defaming</mark> former MP Thanakorn Nanti. The court found Sondhi <mark>guilty</mark> under Section 328 of the Criminal Code, which <mark>governs</mark> <mark>defamation by publication</mark>, after he made a series of statements on his programme between June and September 2023 <mark>linking</mark> Mr Thanakorn to <mark>corruption</mark> in five energy-related projects.</p>
-
-<p>The court <mark>ordered</mark> Sondhi to pay 2 million baht in <mark>damages</mark>, 20,000 baht in <mark>legal fees</mark>, and to <mark>publish</mark> the court <mark>ruling</mark> in seven newspapers at his own <mark>expense</mark>. Mr Thanakorn had originally <mark>sought</mark> 50 million baht in <mark>restitution</mark>. In response, Sondhi said he <mark>disputed</mark> the <mark>verdict</mark> and would <mark>file</mark> a <mark>counter-lawsuit</mark> against those he believed had <mark>orchestrated</mark> the case against him.</p>
-
-<p>The two cases, while <mark>legally distinct</mark>, have converged in public discussion around the role of media power in Thai politics, the use of <mark>defamation law</mark> as a <mark>political weapon</mark>, and the <mark>accountability</mark> of <mark>public figures</mark> who use media platforms to make <mark>unverified</mark> <mark>allegations</mark> against political opponents. Both <mark>cases</mark> are expected to continue generating political <mark>fallout</mark> in the weeks ahead.</p>
-
-<hr class="div">
-
+<p>Extortion Claims Against Deputy PM Phiphat Spark Political Controversy; Sondhi Limthongkul Threatens Legal Action After Defamation Prison Term</p>
+<p>Two overlapping legal and political controversies dominated Thai headlines on Wednesday, both involving veteran media personality Sondhi Limthongkul and touching on allegations of extortion, defamation, and the boundaries of press freedom in Thailand.</p>
+<p>The first controversy erupted on social media when a Facebook user identified as "Joe Montanee" alleged that a group of individuals had attempted to pressure Deputy Prime Minister and Transport Minister Phiphat Ratchakitprakarn into paying 5 million baht per month by threatening to dig up and publish damaging information about him and affiliated businesses within the PT Group. The alleged scheme reportedly failed. Political activist and former journalist Nuttha "Bow" Mahattana added fuel to the fire by writing on her own Facebook page that at least one prominent Thai media outlet was widely known within media circles for engaging in extortion, though she did not name the organisation directly.</p>
+<p>The allegation drew a cryptic comment from Prime Minister Anutin Charnvirakul's official social media account, which responded to Mr Phiphat's post with the words "thank you for providing another perspective." When questioned by reporters at Government House, Mr Anutin smiled and said he did not know what they were referring to, declining to confirm whether he had personally written the comment or whether it had been posted by a social media administrator. The vague response further stoked public speculation about political undercurrents behind the affair. No formal complaint has been filed and no government agency has yet verified the extortion claim.</p>
+<p>In a directly related development, Sondhi Limthongkul, 78, founder of Manager Media Group and veteran leader of the People's Alliance for Democracy, threatened to take legal action after the Criminal Court on Tuesday sentenced him to four months in prison without suspension for defaming former MP Thanakorn Nanti. The court found Sondhi guilty under Section 328 of the Criminal Code, which governs defamation by publication, after he made a series of statements on his programme between June and September 2023 linking Mr Thanakorn to corruption in five energy-related projects.</p>
+<p>The court ordered Sondhi to pay 2 million baht in damages, 20,000 baht in legal fees, and to publish the court ruling in seven newspapers at his own expense. Mr Thanakorn had originally sought 50 million baht in restitution. In response, Sondhi said he disputed the verdict and would file a counter-lawsuit against those he believed had orchestrated the case against him.</p>
+<p>The two cases, while legally distinct, have converged in public discussion around the role of media power in Thai politics, the use of defamation law as a political weapon, and the accountability of public figures who use media platforms to make unverified allegations against political opponents. Both cases are expected to continue generating political fallout in the weeks ahead.</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 2 — คำแปลภาษาไทย</div>
-<p>ข้อกล่าว<mark>กรรโชกทรัพย์</mark>รองนายกฟ๊อป<mark>จุดประเด็นทางการเมือง</mark>; <mark>สนธิจำคุก 4 เดือน</mark>คดี<mark>หมิ่นประมาท</mark>พร้อมคุกคาม<mark>แก้แค้น</mark></p>
-
-<hr class="div">
-
-<p>คดีความขัดแย้งสองเรื่องที่ซ้อนทับกัน<mark>ครอบงำข่าวหลัก</mark>ในไทยวันพุธ ทั้งเกี่ยวข้องกับ<mark>ประเด็นการกรรโชกทรัพย์</mark> การ<mark>หมิ่นประมาท</mark> และ<mark>เสรีภาพสื่อมวลชน</mark>ในประเทศไทย</p>
-
-<p><mark>คดีแรก</mark>: ผู้ใช้เฟซบุ๊กชื่อ "โจฮมั้นที่"อ้างว่ามีกลุ่มบุคคลพยายาม<mark>แบกข้อมูล</mark>เพื่อ<mark>กดดัน</mark>ให้<mark>พิพัฒน์ รัชกิจประการ</mark> รองนายกฟ๊อปและรัฐมนตรีคมนาคม <mark>จ่ายเงินเดือนละ 5 ล้านบาท</mark> เรื่องนี้ทำให้<mark>นายกรัฐมนตรี</mark>อนุติน ชาญวิระกูล ตอบสนองบนโซเชียลมีเดียส์อย่าง<mark>ไม่ชัดเจน</mark> โดยปฏิเสธที่จะชี้แจงว่าเป็นคนที่พิมพ์ตนเองหรือไม่</p>
-
-<p><mark>คดีที่สอง</mark>: ศาลอาญา<mark>ตัดสินจำคุก</mark> สนธิ ลิ้มทองกูล อายุ 78 ปี<mark>4 เดือนโดยไม่รอลงอาญา</mark> ตาม<mark>มาตรา 328 ประมวลกฎหมายอาญา</mark> เนื่องจาก<mark>หมิ่นประมาท</mark>อดีต ส..ธนกร แนนที โดยพาดพาดผ่านรายการ<mark>เชื่อมโยง</mark>ธนกรกบการ<mark>ทุจริตในโครงการพลังงาน 5 โครงการ</mark> ศาลยังสั่งให้จ่าย<mark>ค่าเสียหาย</mark> 2 ล้านบาท และตีพิมพ์คำพิพากษาในหนังสือพิมพ์ 7 ฉบับ โดยเสียค่าใช้จ่ายเอง สนธิ<mark>ปฏิเสธ</mark>คำตัดสินและประกาศว่าจะยื่น<mark>ตอบโต้</mark>ผู้ที่เขาเชื่อว่า<mark>ยื่นฟ้อง</mark>คดีนี้เป็น<mark>การเมือง</mark></p>
-
-<p>ทั้งสองคดีสะท้อนประเด็นที่กว้างขึ้นเกี่ยวกับบทบาทของ<mark>อำนาจสื่อในการเมืองไทย</mark> การใช้<mark>กฎหมายหมิ่นประมาท</mark>เป็นอาวุธ<mark>ทางการเมือง</mark> และ <mark>ความรับผิดชอบ</mark>ของบุคคลสาธารณที่ใช้สื่อเพื่อโจมตีฝ่ายตรงข้าม</p>
-
-<hr class="div">
-
+<p>ข้อกล่าวกรรโชกทรัพย์รองนายกฟ๊อปจุดประเด็นทางการเมือง; สนธิจำคุก 4 เดือนคดีหมิ่นประมาทพร้อมคุกคามแก้แค้น</p>
+<p>คดีความขัดแย้งสองเรื่องที่ซ้อนทับกันครอบงำข่าวหลักในไทยวันพุธ ทั้งเกี่ยวข้องกับประเด็นการกรรโชกทรัพย์ การหมิ่นประมาท และเสรีภาพสื่อมวลชนในประเทศไทย</p>
+<p>คดีแรก: ผู้ใช้เฟซบุ๊กชื่อ "โจฮมั้นที่"อ้างว่ามีกลุ่มบุคคลพยายามแบกข้อมูลเพื่อกดดันให้พิพัฒน์ รัชกิจประการ รองนายกฟ๊อปและรัฐมนตรีคมนาคม จ่ายเงินเดือนละ 5 ล้านบาท เรื่องนี้ทำให้นายกรัฐมนตรีอนุติน ชาญวิระกูล ตอบสนองบนโซเชียลมีเดียส์อย่างไม่ชัดเจน โดยปฏิเสธที่จะชี้แจงว่าเป็นคนที่พิมพ์ตนเองหรือไม่</p>
+<p>คดีที่สอง: ศาลอาญาตัดสินจำคุก สนธิ ลิ้มทองกูล อายุ 78 ปี4 เดือนโดยไม่รอลงอาญา ตามมาตรา 328 ประมวลกฎหมายอาญา เนื่องจากหมิ่นประมาทอดีต ส..ธนกร แนนที โดยพาดพาดผ่านรายการเชื่อมโยงธนกรกบการทุจริตในโครงการพลังงาน 5 โครงการ ศาลยังสั่งให้จ่ายค่าเสียหาย 2 ล้านบาท และตีพิมพ์คำพิพากษาในหนังสือพิมพ์ 7 ฉบับ โดยเสียค่าใช้จ่ายเอง สนธิปฏิเสธคำตัดสินและประกาศว่าจะยื่นตอบโต้ผู้ที่เขาเชื่อว่ายื่นฟ้องคดีนี้เป็นการเมือง</p>
+<p>ทั้งสองคดีสะท้อนประเด็นที่กว้างขึ้นเกี่ยวกับบทบาทของอำนาจสื่อในการเมืองไทย การใช้กฎหมายหมิ่นประมาทเป็นอาวุธทางการเมือง และ ความรับผิดชอบของบุคคลสาธารณที่ใช้สื่อเพื่อโจมตีฝ่ายตรงข้าม</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 3 — Vocabulary Table (30 Words)</div>
-<hr class="div">
-
-<div class="headline" style="margin-top: 20px; font-size: 22px;">Part 4 — Anki Format</div>
 
 
 <a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
