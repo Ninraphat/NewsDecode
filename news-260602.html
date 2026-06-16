@@ -3,12 +3,15 @@
 <head>
 <script>
 document.addEventListener('click', function(e) {
-  if (e.target.classList.contains('word-en')) {
-    e.target.style.display = 'none';
-    e.target.nextElementSibling.style.display = 'inline';
-  } else if (e.target.classList.contains('word-th')) {
-    e.target.style.display = 'none';
-    e.target.previousElementSibling.style.display = 'inline';
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
   }
 });
 </script>
@@ -57,51 +60,25 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <div class="wrap">
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
-<div class="headline" style="margin-top: 20px; font-size: 22px;">ส่วนที่ 1 — ต้นฉบับภาษาอังกฤษ</div>
-<p>Koh Samui <mark>Taxi Mafia</mark> Murder: Nine <mark>Suspects</mark> Arrested, Three Still <mark>Fugitives</mark></p>
-
-<hr class="div">
-
-<p>Police have <mark>apprehended</mark> nine of twelve <mark>suspects</mark> in the <mark>assault</mark> and murder of a volunteer taxi driver on the tourist island of Koh Samui, Surat Thani province. The victim, Sikkharin Phromcharoen, 31, was beaten and shot dead on May 24 in a dispute over <mark>passenger pick-up zones</mark> involving illegal <mark>black-plate</mark> taxi drivers.</p>
-
-<p>Sikkharin was widely admired on the island for providing free <mark>transport</mark> to pregnant women, elderly residents, <mark>disabled</mark> individuals and poor families. His <mark>tragic</mark> death sparked public <mark>outrage</mark> across Thailand.</p>
-
-<p>According to his wife, Onchuma, the conflict <mark>erupted</mark> after Sikkharin parked in an area <mark>claimed</mark> by a group of rival, unlicensed drivers. A local <mark>mediator</mark> had previously <mark>intervened</mark> to resolve the dispute, and the family believed <mark>tensions</mark> had eased before the <mark>fatal</mark> attack.</p>
-
-<p>Pol Col Kritnithi Thongthip, spokesman for Surat Thani police, confirmed that <mark>detectives</mark> had gathered sufficient evidence to <mark>obtain</mark> court <mark>warrants</mark> for all twelve suspects. The <mark>apprehended</mark> suspects face charges of <mark>premeditated murder</mark> and illegal possession and use of <mark>firearms</mark>. Court approval was also granted to extend the <mark>detention</mark> of two suspects pending further <mark>interrogation</mark>.</p>
-
-<p>The first <mark>suspect</mark> to be arrested, Jatupol Ruangkong, 42, <mark>surrendered</mark> to officers at Bo Phut police station after a <mark>warrant</mark> was issued by Koh Samui Provincial Court. He <mark>denied</mark> direct involvement in the assault and shooting, claiming he merely knocked on the victim's car window and that several men then <mark>confronted</mark> the victim before gunshots were fired. He said he worked as a security guard at a nearby <mark>nightclub</mark>.</p>
-
-<p>The victim's family, fearing <mark>retaliation</mark> from <mark>influential</mark> local groups, <mark>fled</mark> Surat Thani with more than ten relatives and entered a police <mark>witness protection</mark> programme. Relatives had not yet collected Sikkharin's body for <mark>funeral rites</mark> due to ongoing safety concerns.</p>
-
-<p>Police asked the public to <mark>submit</mark> any information on the <mark>whereabouts</mark> of the three remaining <mark>fugitives</mark>. Authorities <mark>denied</mark> the existence of an organised taxi mafia on Koh Samui but <mark>acknowledged</mark> that the murder was part of a deeper, long-standing <mark>territorial</mark> conflict over <mark>lucrative</mark> transport routes on the island.</p>
-
-<hr class="div">
-
+<div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
+<p>Koh Samui Taxi Mafia Murder: Nine Suspects Arrested, Three Still Fugitives</p>
+<p>Police have apprehended nine of twelve suspects in the assault and murder of a volunteer taxi driver on the tourist island of Koh Samui, Surat Thani province. The victim, Sikkharin Phromcharoen, 31, was beaten and shot dead on May 24 in a dispute over passenger pick-up zones involving illegal black-plate taxi drivers.</p>
+<p>Sikkharin was widely admired on the island for providing free transport to pregnant women, elderly residents, disabled individuals and poor families. His tragic death sparked public outrage across Thailand.</p>
+<p>According to his wife, Onchuma, the conflict erupted after Sikkharin parked in an area claimed by a group of rival, unlicensed drivers. A local mediator had previously intervened to resolve the dispute, and the family believed tensions had eased before the fatal attack.</p>
+<p>Pol Col Kritnithi Thongthip, spokesman for Surat Thani police, confirmed that detectives had gathered sufficient evidence to obtain court warrants for all twelve suspects. The apprehended suspects face charges of premeditated murder and illegal possession and use of firearms. Court approval was also granted to extend the detention of two suspects pending further interrogation.</p>
+<p>The first suspect to be arrested, Jatupol Ruangkong, 42, surrendered to officers at Bo Phut police station after a warrant was issued by Koh Samui Provincial Court. He denied direct involvement in the assault and shooting, claiming he merely knocked on the victim's car window and that several men then confronted the victim before gunshots were fired. He said he worked as a security guard at a nearby nightclub.</p>
+<p>The victim's family, fearing retaliation from influential local groups, fled Surat Thani with more than ten relatives and entered a police witness protection programme. Relatives had not yet collected Sikkharin's body for funeral rites due to ongoing safety concerns.</p>
+<p>Police asked the public to submit any information on the whereabouts of the three remaining fugitives. Authorities denied the existence of an organised taxi mafia on Koh Samui but acknowledged that the murder was part of a deeper, long-standing territorial conflict over lucrative transport routes on the island.</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">ส่วนที่ 2 — คำแปลภาษาไทย</div>
-<p>คดีฆาตกรรม<mark>มาเฟียแท็กซี่เกาะสมุย</mark>: จับแล้ว 9 คน ยังหนีอีก 3 ราย</p>
-
-<hr class="div">
-
-<p>ตำรวจจับกุมผู้<mark>ต้องสงสัย</mark>ได้ 9 ใน 12 ราย ในคดี<mark>ทำร้ายร่างกายและฆาตกรรม</mark>คนขับแท็กซี่อาสาบนเกาะสมุย จังหวัดสุราษฎร์ธานี ผู้เสียชีวิตคือสิขริน พรหมเจริญ อายุ 31 ปี ถูกรุมทำร้ายและยิงเสียชีวิตเมื่อวันที่ 24 พฤษภาคม ใน<mark>ข้อพิพาท</mark>เรื่อง<mark>จุดรับส่งผู้โดยสาร</mark>กับ<mark>คนขับแท็กซี่ป้ายดำผิดกฎหมาย</mark></p>
-
-<p>สิขรินเป็นที่รู้จักกันดีบนเกาะในฐานะคนขับที่ให้บริการรับส่งฟรีแก่หญิงมีครรภ์ ผู้สูงอายุ ผู้<mark>พิการ</mark> และครอบครัวยากจน การเสียชีวิต<mark>อย่างน่าเศร้า</mark>ของเขาก่อให้เกิด<mark>ความโกรธแค้น</mark>ในหมู่ประชาชนทั่วประเทศไทย</p>
-
-<p>ภรรยาของเขาชื่ออ้นชุมา เปิดเผยว่าความขัดแย้ง<mark>ระเบิดขึ้น</mark>หลังจากสิขรินจอดรถในพื้นที่ที่กลุ่มคนขับ<mark>ไม่มีใบอนุญาต</mark>อ้างว่าเป็นของตน ก่อนหน้านี้มี<mark>คนกลาง</mark>ในพื้นที่เข้า<mark>ไกล่เกลี่ย</mark>แล้ว และครอบครัวเชื่อว่า<mark>ความตึงเครียด</mark>ได้คลายลงก่อนที่จะเกิดการโจมตี<mark>อย่างร้ายแรง</mark></p>
-
-<p>พ.ต.อ.กฤษณิต ทองทิพย์ โฆษกตำรวจสุราษฎร์ธานี ยืนยันว่า<mark>นักสืบ</mark>รวบรวมหลักฐานเพียงพอเพื่อขอ<mark>หมายจับ</mark>ผู้ต้องสงสัยทั้ง 12 ราย ผู้ถูก<mark>จับกุม</mark>เผชิญ<mark>ข้อกล่าวหาฆ่าคนโดยไตร่ตรองไว้ก่อน</mark>และครอบครองและใช้<mark>อาวุธปืน</mark>โดยผิดกฎหมาย</p>
-
-<p>ผู้ต้องสงสัยรายแรกที่ถูกจับ คือ จตุพล เรืองคง อายุ 42 ปี เข้า<mark>มอบตัว</mark>ที่สถานีตำรวจบ่อผุดหลังออก<mark>หมายจับ</mark> เขา<mark>ปฏิเสธ</mark>ว่าไม่ได้เป็นคนยิง โดยอ้างว่าตนเพียงเคาะกระจกรถเท่านั้น และมีคนอื่น<mark>เผชิญหน้า</mark>กับเหยื่อก่อนเกิดเสียงปืน</p>
-
-<p>ครอบครัวของเหยื่อกลัว<mark>การแก้แค้น</mark>จากกลุ่ม<mark>มีอิทธิพล</mark> จึง<mark>หลบหนี</mark>จากสุราษฎร์ธานีพร้อมญาติกว่า 10 คนและอยู่ใน<mark>โครงการคุ้มครองพยาน</mark>ของตำรวจ ครอบครัวยังไม่สามารถรับศพกลับไปประกอบ<mark>พิธีกรรม</mark>ทางศาสนาได้เนื่องจากยังกังวลเรื่องความปลอดภัย</p>
-
-<p>ตำรวจ<mark>ปฏิเสธ</mark>การมีอยู่ของ<mark>มาเฟียแท็กซี่</mark>บนเกาะสมุย แต่<mark>ยอมรับ</mark>ว่าการฆาตกรรมนี้เป็นส่วนหนึ่งของ<mark>ความขัดแย้งเรื่องดินแดน</mark>ที่ยืดเยื้อมานานเกี่ยวกับเส้นทาง<mark>ขนส่งที่ทำกำไรสูง</mark>บนเกาะ</p>
-
-<hr class="div">
-
+<p>คดีฆาตกรรมมาเฟียแท็กซี่เกาะสมุย: จับแล้ว 9 คน ยังหนีอีก 3 ราย</p>
+<p>ตำรวจจับกุมผู้ต้องสงสัยได้ 9 ใน 12 ราย ในคดีทำร้ายร่างกายและฆาตกรรมคนขับแท็กซี่อาสาบนเกาะสมุย จังหวัดสุราษฎร์ธานี ผู้เสียชีวิตคือสิขริน พรหมเจริญ อายุ 31 ปี ถูกรุมทำร้ายและยิงเสียชีวิตเมื่อวันที่ 24 พฤษภาคม ในข้อพิพาทเรื่องจุดรับส่งผู้โดยสารกับคนขับแท็กซี่ป้ายดำผิดกฎหมาย</p>
+<p>สิขรินเป็นที่รู้จักกันดีบนเกาะในฐานะคนขับที่ให้บริการรับส่งฟรีแก่หญิงมีครรภ์ ผู้สูงอายุ ผู้พิการ และครอบครัวยากจน การเสียชีวิตอย่างน่าเศร้าของเขาก่อให้เกิดความโกรธแค้นในหมู่ประชาชนทั่วประเทศไทย</p>
+<p>ภรรยาของเขาชื่ออ้นชุมา เปิดเผยว่าความขัดแย้งระเบิดขึ้นหลังจากสิขรินจอดรถในพื้นที่ที่กลุ่มคนขับไม่มีใบอนุญาตอ้างว่าเป็นของตน ก่อนหน้านี้มีคนกลางในพื้นที่เข้าไกล่เกลี่ยแล้ว และครอบครัวเชื่อว่าความตึงเครียดได้คลายลงก่อนที่จะเกิดการโจมตีอย่างร้ายแรง</p>
+<p>พ.ต.อ.กฤษณิต ทองทิพย์ โฆษกตำรวจสุราษฎร์ธานี ยืนยันว่านักสืบรวบรวมหลักฐานเพียงพอเพื่อขอหมายจับผู้ต้องสงสัยทั้ง 12 ราย ผู้ถูกจับกุมเผชิญข้อกล่าวหาฆ่าคนโดยไตร่ตรองไว้ก่อนและครอบครองและใช้อาวุธปืนโดยผิดกฎหมาย</p>
+<p>ผู้ต้องสงสัยรายแรกที่ถูกจับ คือ จตุพล เรืองคง อายุ 42 ปี เข้ามอบตัวที่สถานีตำรวจบ่อผุดหลังออกหมายจับ เขาปฏิเสธว่าไม่ได้เป็นคนยิง โดยอ้างว่าตนเพียงเคาะกระจกรถเท่านั้น และมีคนอื่นเผชิญหน้ากับเหยื่อก่อนเกิดเสียงปืน</p>
+<p>ครอบครัวของเหยื่อกลัวการแก้แค้นจากกลุ่มมีอิทธิพล จึงหลบหนีจากสุราษฎร์ธานีพร้อมญาติกว่า 10 คนและอยู่ในโครงการคุ้มครองพยานของตำรวจ ครอบครัวยังไม่สามารถรับศพกลับไปประกอบพิธีกรรมทางศาสนาได้เนื่องจากยังกังวลเรื่องความปลอดภัย</p>
+<p>ตำรวจปฏิเสธการมีอยู่ของมาเฟียแท็กซี่บนเกาะสมุย แต่ยอมรับว่าการฆาตกรรมนี้เป็นส่วนหนึ่งของความขัดแย้งเรื่องดินแดนที่ยืดเยื้อมานานเกี่ยวกับเส้นทางขนส่งที่ทำกำไรสูงบนเกาะ</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">ส่วนที่ 3 — คำศัพท์ 30 คำ</div>
-<hr class="div">
-
 <div class="headline" style="margin-top: 20px; font-size: 22px;">ส่วนที่ 4 — Anki Format</div>
 
 
