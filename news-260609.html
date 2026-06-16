@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+document.addEventListener('click', function(e) {
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
+  }
+});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily News Decode – 2026-06-09</title>
@@ -47,45 +61,21 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
-<p>Shocking <mark>Twist</mark> in Nong Angoon Case: 13-Year-Old <mark>Stepsister</mark> and 17-Year-Old Uncle <mark>Arrested</mark> for <mark>Suffocating</mark> and <mark>Concealing</mark> Body of Seven-Year-Old Kanchanaburi Girl</p>
-
-<hr class="div">
-
-<p>A week-long investigation into the death of seven-year-old Kasama, widely known as "Nong Angoon," took a <mark>devastating</mark> and unexpected turn on Saturday when police in Sangkhla Buri district, Kanchanaburi, <mark>arrested</mark> the victim's own 13-year-old <mark>stepsister</mark>, Kanda, and her 17-year-old uncle, Pae, after both <mark>allegedly confessed</mark> to their roles in causing the child's death and <mark>concealing</mark> her body.</p>
-
-<p>Police said the <mark>incident</mark> occurred on the afternoon of 30 May, when the two girls were playing together at their home in Ban Thi Khrong. According to Kanda's <mark>statement</mark> to investigators, an argument broke out between the two children over a shared toy and use of a mobile phone. During the <mark>altercation</mark>, Kanda allegedly <mark>covered the younger girl's mouth and nose</mark>, causing her to <mark>suffocate</mark>. The two girls shared the same mother but had different fathers. Their mother told police the pair had <mark>frequently quarrelled</mark> and fought over the phone.</p>
-
-<p>After realising what had happened, Kanda panicked and <mark>summoned</mark> her 17-year-old uncle Pae to help her. Together, the two <mark>minors concealed</mark> the body in a <mark>wardrobe</mark> inside the house. Several hours later, they <mark>transferred</mark> the body to a motorcycle fitted with a <mark>sidecar</mark> and drove to a rubber plantation near the Chao Pho Khao Yai shrine, where they <mark>disposed of</mark> the body beneath a <mark>bamboo grove</mark> before returning home and behaving as if nothing had occurred.</p>
-
-<p>On Saturday, Pol Lt Gen Pisit Tanprasert, chief of Provincial Police Region 7, confirmed the <mark>arrests</mark> and said the 17-year-old had been <mark>escorted</mark> to <mark>re-enact</mark> the crime at two locations — the victim's home and the <mark>disposal site</mark>. The <mark>autopsy</mark> conducted at Loei Hospital confirmed the <mark>cause of death</mark> as <mark>respiratory and circulatory failure</mark>, consistent with <mark>suffocation</mark>. Earlier <mark>preliminary examinations</mark> had <mark>indicated</mark> possible signs of <mark>sexual assault</mark>, but investigators have not yet formally confirmed this <mark>allegation</mark>.</p>
-
-<p>Over the course of the investigation, police had <mark>questioned</mark> more than 40 <mark>individuals</mark>, including three Buddhist monks and several local residents, and had collected over 25 <mark>DNA samples</mark>. The earlier <mark>suspicion</mark> had focused on adults in the community, and the case had attracted senior police <mark>oversight</mark> including a visit by the <mark>deputy national police chief</mark>. The <mark>revelation</mark> that two <mark>juvenile</mark> family members were <mark>responsible</mark> came as a profound shock to the <mark>community</mark> and to the victim's parents.</p>
-
-<p>The victim's father, who no longer lived with the family, said he found the <mark>account</mark> difficult to accept, questioning whether a dispute over a toy or phone could truly have led to his daughter's death. The mother was reported to be in severe <mark>distress</mark> and was receiving <mark>mental health counselling</mark>. Relatives urged the public to avoid <mark>speculating</mark> online about the case.</p>
-
-<p>Both <mark>suspects</mark> are <mark>juveniles</mark> and are currently under the <mark>supervision</mark> of the Kanchanaburi Juvenile and Family Court. Under Thai law, <mark>minors</mark> cannot be tried as adults and must be processed through the <mark>juvenile justice system</mark>. Investigators said the case would continue as they sought to <mark>establish</mark> the full sequence of events and determine whether additional <mark>charges</mark> were <mark>warranted</mark>.</p>
-
-<hr class="div">
-
+<p>Shocking Twist in Nong Angoon Case: 13-Year-Old Stepsister and 17-Year-Old Uncle Arrested for Suffocating and Concealing Body of Seven-Year-Old Kanchanaburi Girl</p>
+<p>A week-long investigation into the death of seven-year-old Kasama, widely known as "Nong Angoon," took a devastating and unexpected turn on Saturday when police in Sangkhla Buri district, Kanchanaburi, arrested the victim's own 13-year-old stepsister, Kanda, and her 17-year-old uncle, Pae, after both allegedly confessed to their roles in causing the child's death and concealing her body.</p>
+<p>Police said the incident occurred on the afternoon of 30 May, when the two girls were playing together at their home in Ban Thi Khrong. According to Kanda's statement to investigators, an argument broke out between the two children over a shared toy and use of a mobile phone. During the altercation, Kanda allegedly covered the younger girl's mouth and nose, causing her to suffocate. The two girls shared the same mother but had different fathers. Their mother told police the pair had frequently quarrelled and fought over the phone.</p>
+<p>After realising what had happened, Kanda panicked and summoned her 17-year-old uncle Pae to help her. Together, the two minors concealed the body in a wardrobe inside the house. Several hours later, they transferred the body to a motorcycle fitted with a sidecar and drove to a rubber plantation near the Chao Pho Khao Yai shrine, where they disposed of the body beneath a bamboo grove before returning home and behaving as if nothing had occurred.</p>
+<p>On Saturday, Pol Lt Gen Pisit Tanprasert, chief of Provincial Police Region 7, confirmed the arrests and said the 17-year-old had been escorted to re-enact the crime at two locations — the victim's home and the disposal site. The autopsy conducted at Loei Hospital confirmed the cause of death as respiratory and circulatory failure, consistent with suffocation. Earlier preliminary examinations had indicated possible signs of sexual assault, but investigators have not yet formally confirmed this allegation.</p>
+<p>Over the course of the investigation, police had questioned more than 40 individuals, including three Buddhist monks and several local residents, and had collected over 25 DNA samples. The earlier suspicion had focused on adults in the community, and the case had attracted senior police oversight including a visit by the deputy national police chief. The revelation that two juvenile family members were responsible came as a profound shock to the community and to the victim's parents.</p>
+<p>The victim's father, who no longer lived with the family, said he found the account difficult to accept, questioning whether a dispute over a toy or phone could truly have led to his daughter's death. The mother was reported to be in severe distress and was receiving mental health counselling. Relatives urged the public to avoid speculating online about the case.</p>
+<p>Both suspects are juveniles and are currently under the supervision of the Kanchanaburi Juvenile and Family Court. Under Thai law, minors cannot be tried as adults and must be processed through the juvenile justice system. Investigators said the case would continue as they sought to establish the full sequence of events and determine whether additional charges were warranted.</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 2 — คำแปลภาษาไทย</div>
-<p><mark>พลิกโฉนสุดชอก</mark>ในคดีน้องอ้างอน: จับ<mark>พี่สาวต่างบิดา</mark>วัย 13 ปี และ<mark>ลุง</mark>วัย 17 ปี ในคดี<mark>อุด</mark>และ<mark>ซ่อนศพ</mark>เด็กหญิง 7 ขวบ จ.กาญจนบุรี</p>
-
-<hr class="div">
-
-<p>การสืบสวนนานหนึ่งสัปดาห์ในคดีการเสียชีวิตของกาสะมา ที่รู้จักกันในนาม "น้องอ้างอน" เกิด<mark>พลิกโฉนสุดชอก</mark>เมื่อตำรวจจับกุม<mark>พี่สาวต่างบิดา</mark>วัย 13 ปี ชื่อกันดา และลุงวัย 17 ปี ชื่อแป หลังทั้งสอง<mark>รับสารภาพ</mark>ว่ามีส่วนเกี่ยวข้องกับการเสียชีวิตของเด็กและการ<mark>ซ่อนเร้นศพ</mark></p>
-
-<p>ผู้แทนตำรวจซักถามว่าในบ่ายวันที่ 30 พฤษภาคม เด็กสองคนกำลังเล่นที่บ้าน เกิด<mark>ข้อทะเลาะวิวาท</mark>เรื่องของเล่นและโทรศัพท์มือถือ กันดา<mark>ถูกกล่าวหา</mark>ว่าพยายามเอามือ<mark>ปิดปากและจมูก</mark>น้องสาวจนเสียชีวิต<mark>อุด</mark> จากนั้นจึงขอให้ลุงช่วย<mark>ซ่อนเร้นศพ</mark> ทั้งสองเดินทางไปทิ้งเร้นศพใน<mark>สวนยางพารา</mark>ก่อนกลับบ้านทำเหมือนไม่มีอะไรเกิดขึ้น</p>
-
-<p>ผล<mark>ชันสูตรพลิกศพ</mark>ยืนยัน<mark>สาเหตุการเสียชีวิต</mark>ว่าเป็นภาวะ<mark>ระบบไหลเวียนล้มเหลว</mark>ซึ่งสอดคล้องกับการ<mark>อุด</mark> พ่อเด็กแสดงความ<mark>สงสัย</mark>ว่าการทะเลาะวิวาทเรื่องของเล่นจะนำไปสู่การเสียชีวิตได้จริงหรือไม่ แม่เด็กอยู่ในอาการ<mark>เครียดโศกอย่างรุนแรง</mark>และได้รับการ<mark>ปรึกษาด้านสุขภาพจิต</mark></p>
-
-<p>ทั้งสองคนเป็น<mark>ผู้เยาวชน</mark>อยู่ภายใต้การดูแลของ<mark>ศาลเยาวชนและครอบครัว</mark>จังหวัดกาญจนบุรี ภายใต้<mark>กฎหมายกระบวนการยุติธรรมเยาวชน</mark>ของไทยซึ่งไม่อนุญาตให้ฟ้องได้ในฐานะผู้ใหญ่</p>
-
-<hr class="div">
-
+<p>พลิกโฉนสุดชอกในคดีน้องอ้างอน: จับพี่สาวต่างบิดาวัย 13 ปี และลุงวัย 17 ปี ในคดีอุดและซ่อนศพเด็กหญิง 7 ขวบ จ.กาญจนบุรี</p>
+<p>การสืบสวนนานหนึ่งสัปดาห์ในคดีการเสียชีวิตของกาสะมา ที่รู้จักกันในนาม "น้องอ้างอน" เกิดพลิกโฉนสุดชอกเมื่อตำรวจจับกุมพี่สาวต่างบิดาวัย 13 ปี ชื่อกันดา และลุงวัย 17 ปี ชื่อแป หลังทั้งสองรับสารภาพว่ามีส่วนเกี่ยวข้องกับการเสียชีวิตของเด็กและการซ่อนเร้นศพ</p>
+<p>ผู้แทนตำรวจซักถามว่าในบ่ายวันที่ 30 พฤษภาคม เด็กสองคนกำลังเล่นที่บ้าน เกิดข้อทะเลาะวิวาทเรื่องของเล่นและโทรศัพท์มือถือ กันดาถูกกล่าวหาว่าพยายามเอามือปิดปากและจมูกน้องสาวจนเสียชีวิตอุด จากนั้นจึงขอให้ลุงช่วยซ่อนเร้นศพ ทั้งสองเดินทางไปทิ้งเร้นศพในสวนยางพาราก่อนกลับบ้านทำเหมือนไม่มีอะไรเกิดขึ้น</p>
+<p>ผลชันสูตรพลิกศพยืนยันสาเหตุการเสียชีวิตว่าเป็นภาวะระบบไหลเวียนล้มเหลวซึ่งสอดคล้องกับการอุด พ่อเด็กแสดงความสงสัยว่าการทะเลาะวิวาทเรื่องของเล่นจะนำไปสู่การเสียชีวิตได้จริงหรือไม่ แม่เด็กอยู่ในอาการเครียดโศกอย่างรุนแรงและได้รับการปรึกษาด้านสุขภาพจิต</p>
+<p>ทั้งสองคนเป็นผู้เยาวชนอยู่ภายใต้การดูแลของศาลเยาวชนและครอบครัวจังหวัดกาญจนบุรี ภายใต้กฎหมายกระบวนการยุติธรรมเยาวชนของไทยซึ่งไม่อนุญาตให้ฟ้องได้ในฐานะผู้ใหญ่</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 3 — Vocabulary Table (30 Words)</div>
-<hr class="div">
-
-<div class="headline" style="margin-top: 20px; font-size: 22px;">Part 4 — Anki Format</div>
 
 
 <a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
