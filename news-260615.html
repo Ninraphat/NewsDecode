@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+document.addEventListener('click', function(e) {
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
+  }
+});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily News Decode – 2026-06-15</title>
@@ -47,43 +61,20 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
-<p>Off-Duty Border Patrol Officer <mark>Shoots Dead</mark> Two Motorcycle Taxi Riders and <mark>Wounds</mark> Third After <mark>Fare Dispute</mark> in Bangkok; Later <mark>Granted Bail</mark> with Strict <mark>Conditions</mark></p>
-
-<hr class="div">
-
-<p>An off-duty <mark>Border Patrol Police</mark> officer <mark>shot dead</mark> two motorcycle taxi riders and <mark>wounded</mark> a third in the early hours of 14 June 2026, following a <mark>heated argument</mark> over a motorcycle taxi <mark>fare</mark> in the Huai Khwang area of Bangkok. The <mark>suspect</mark>, <mark>Police Lance Corporal</mark> Namthap Pakwattana, 33, subsequently <mark>surrendered</mark> to <mark>authorities</mark> at Makkasan Police Station and <mark>handed over</mark> his <mark>service weapon</mark> — a 9mm Sig Sauer <mark>pistol</mark> — which was <mark>seized</mark> as <mark>evidence</mark>.</p>
-
-<p>According to police, the <mark>incident</mark> occurred at approximately 2:50 am on Soi Prachasongkhro 38 near Huai Khwang Market in the Ratchada area of Din Daeng district. Namthap had <mark>travelled</mark> from Surin province to Bangkok to sit a <mark>career promotion examination</mark> and had earlier met his girlfriend at a nearby restaurant before <mark>accompanying</mark> her to public transport. He then <mark>approached</mark> a group of motorcycle taxi riders to <mark>arrange</mark> a ride to his <mark>accommodation</mark> in the Makkasan area. A rider <mark>quoted</mark> a <mark>fare</mark> of 120 baht, which Namthap reportedly considered <mark>excessive</mark> and asked to be <mark>reduced</mark> by 60 baht, <mark>triggering</mark> a verbal <mark>altercation</mark> that rapidly <mark>escalated</mark> into a <mark>physical confrontation</mark>.</p>
-
-<p><mark>CCTV footage</mark> and <mark>witness testimony</mark> showed that motorcycle taxi rider Charin Khunarak, 48, <mark>kicked</mark> the officer, causing him to <mark>fall to the ground</mark>, before another rider, Phurit Mangthisan, 37, also kicked him. Namthap then allegedly <mark>drew</mark> his <mark>firearm</mark> and <mark>fired multiple shots</mark> at the group. Phurit was found <mark>face up</mark> at the scene with <mark>bullet wounds</mark> to his back and <mark>exit wounds</mark> through his chest; he was <mark>declared dead at the scene</mark>. Charin <mark>sustained</mark> gunshot wounds to his thigh and hand, was <mark>transported</mark> to hospital, but later <mark>succumbed</mark> to his <mark>injuries</mark>. A third rider, Kiatisak Srirat, 46, was struck once in the thigh and <mark>survived</mark>. Witnesses told Channel 7 that Namthap appeared to <mark>initiate</mark> the <mark>confrontation</mark> and may have been <mark>under the influence of alcohol</mark>, though police did not publicly <mark>confirm</mark> this.</p>
-
-<p>On 15 June, <mark>investigators escorted</mark> Namthap to the Criminal Court for a <mark>remand hearing</mark>. He was formally <mark>charged</mark> with <mark>intentional murder</mark>, <mark>attempted murder</mark>, and carrying a <mark>firearm in a public place</mark> without <mark>permission</mark>. Police <mark>requested</mark> a 12-day <mark>detention period</mark> to gather further <mark>evidence</mark>. During the <mark>transfer to court</mark>, Namthap <mark>kept his head down</mark> and wore a hat to <mark>conceal</mark> his face. When <mark>approached</mark> by reporters, he offered only a brief <mark>apology</mark> and <mark>claimed</mark> the victims had <mark>started the fight</mark>.</p>
-
-<p>The <mark>deceased riders’</mark> wives arrived at court to <mark>oppose</mark> the <mark>bail application</mark>, <mark>urging</mark> the judge to <mark>deny release</mark> on the grounds that Namthap might <mark>flee</mark> or <mark>tamper with witnesses</mark>. The <mark>accused's father</mark>, a <mark>retired police officer</mark>, offered a luxury <mark>condominium</mark> valued at one million baht as <mark>security</mark> for his son’s release. The court ultimately <mark>granted bail</mark> of 500,000 baht, but <mark>imposed strict conditions</mark>: Namthap is <mark>prohibited</mark> from <mark>contacting</mark> the <mark>victims’ wives or relatives</mark>, <mark>leaving Thailand</mark>, <mark>carrying any firearm</mark>, or <mark>interfering</mark> with <mark>witnesses</mark> in the <mark>neighbourhood</mark>. Breach of any condition would result in <mark>immediate cancellation</mark> of his <mark>bail</mark>.</p>
-
-<p>Relatives of the <mark>suspect</mark> said that Namthap had a <mark>mental health condition</mark> and was taking <mark>prescribed medication</mark>, but <mark>attributed</mark> the shooting to a momentary <mark>loss of temper</mark> rather than his <mark>condition</mark>. The case has <mark>sparked</mark> intense public debate about the <mark>use of lethal force</mark> by <mark>off-duty officers</mark>, <mark>police accountability</mark>, and <mark>special privileges</mark> that might be <mark>extended</mark> to <mark>law enforcement</mark> personnel during <mark>legal proceedings</mark>.</p>
-
-<hr class="div">
-
+<p>Off-Duty Border Patrol Officer Shoots Dead Two Motorcycle Taxi Riders and Wounds Third After Fare Dispute in Bangkok; Later Granted Bail with Strict Conditions</p>
+<p>An off-duty Border Patrol Police officer shot dead two motorcycle taxi riders and wounded a third in the early hours of 14 June 2026, following a heated argument over a motorcycle taxi fare in the Huai Khwang area of Bangkok. The suspect, Police Lance Corporal Namthap Pakwattana, 33, subsequently surrendered to authorities at Makkasan Police Station and handed over his service weapon — a 9mm Sig Sauer pistol — which was seized as evidence.</p>
+<p>According to police, the incident occurred at approximately 2:50 am on Soi Prachasongkhro 38 near Huai Khwang Market in the Ratchada area of Din Daeng district. Namthap had travelled from Surin province to Bangkok to sit a career promotion examination and had earlier met his girlfriend at a nearby restaurant before accompanying her to public transport. He then approached a group of motorcycle taxi riders to arrange a ride to his accommodation in the Makkasan area. A rider quoted a fare of 120 baht, which Namthap reportedly considered excessive and asked to be reduced by 60 baht, triggering a verbal altercation that rapidly escalated into a physical confrontation.</p>
+<p>CCTV footage and witness testimony showed that motorcycle taxi rider Charin Khunarak, 48, kicked the officer, causing him to fall to the ground, before another rider, Phurit Mangthisan, 37, also kicked him. Namthap then allegedly drew his firearm and fired multiple shots at the group. Phurit was found face up at the scene with bullet wounds to his back and exit wounds through his chest; he was declared dead at the scene. Charin sustained gunshot wounds to his thigh and hand, was transported to hospital, but later succumbed to his injuries. A third rider, Kiatisak Srirat, 46, was struck once in the thigh and survived. Witnesses told Channel 7 that Namthap appeared to initiate the confrontation and may have been under the influence of alcohol, though police did not publicly confirm this.</p>
+<p>On 15 June, investigators escorted Namthap to the Criminal Court for a remand hearing. He was formally charged with intentional murder, attempted murder, and carrying a firearm in a public place without permission. Police requested a 12-day detention period to gather further evidence. During the transfer to court, Namthap kept his head down and wore a hat to conceal his face. When approached by reporters, he offered only a brief apology and claimed the victims had started the fight.</p>
+<p>The deceased riders’ wives arrived at court to oppose the bail application, urging the judge to deny release on the grounds that Namthap might flee or tamper with witnesses. The accused's father, a retired police officer, offered a luxury condominium valued at one million baht as security for his son’s release. The court ultimately granted bail of 500,000 baht, but imposed strict conditions: Namthap is prohibited from contacting the victims’ wives or relatives, leaving Thailand, carrying any firearm, or interfering with witnesses in the neighbourhood. Breach of any condition would result in immediate cancellation of his bail.</p>
+<p>Relatives of the suspect said that Namthap had a mental health condition and was taking prescribed medication, but attributed the shooting to a momentary loss of temper rather than his condition. The case has sparked intense public debate about the use of lethal force by off-duty officers, police accountability, and special privileges that might be extended to law enforcement personnel during legal proceedings.</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 2 — คำแปลภาษาไทย</div>
-<p>ตำรวจ<mark>สายตรวจชายแดน</mark>นอกเวรา<mark>ยิง</mark>คนขับ<mark>วินมอเตอร์ไซค์รับจ้างเสียชีวิต</mark> 2 ราย และบาดเจ็บอีก 1 ราย เหตุ<mark>โต้เถียงเรื่องค่าโดยสาร</mark>; ทั้งหมดนี้<mark>ได้รับการประกันตัว</mark>พร้อม<mark>เงื่อนไขเข้มงวด</mark></p>
-
-<hr class="div">
-
-<p>ตำรวจ<mark>สายตรวจชายแดนนอกเวรา</mark>กระสุนทั้งหมดใส่และยิงใส่กลุ่มคนขับวินมอเตอร์ไซค์รับจ้างในเย็นมืดวันที่ 14 มิถุนายน 2569 สถานที่เกิดเหตุ<mark>ซอยประชาสงเคราะห์ 38</mark> ใกล้ตลาดหวยขวาง เขตประชาสงเคราะห์ เขตดินแดง</p>
-
-<p><mark>ผู้ต้องสงสัย</mark> สิบเอกนัฐวุฒิ รักษาสันติภาพ อายุ 33 ปี <mark>เดินทาง</mark>มาจากจ.สุรินทร์เพื่อ<mark>สอบเลื่อนตำแหน่ง</mark> หลังเกิด <mark>ข้อพิพาท</mark>เรื่องค่าโดยสาร เขาเห็นว่า 120 บาท<mark>แพง</mark>เกินไป ขอ<mark>กดลง</mark> 60 บาท อันนำไปสู่<mark>การเถียงวาจากกันอย่างรุนแรง</mark></p>
-
-<p><mark>ภาพจากกล้องวงจร</mark>แสดงให้เห็นว่าฉาริน ขุนนารัก<mark>เตะเท้า</mark>จนก็นเซียก่อนที่อีกคน<mark>จะเตะอีกครั้ง</mark> จากนั้นนัฐวุฒิ<mark>ควักปืน</mark> และ<mark>ยิงหลายนัด</mark>ใส่กลุ่ม พุริทฌ์ หมานฒิษาน เสียชีวิตในที่เกิดเหตุ ฉาริน<mark>เสียชีวิต</mark>ภายหลังจาก<mark>จำหน่ายทัพ</mark>ไปที่โรงพยาบาล ส่วนเกียติษัก<mark>บาดเจ็บ</mark>ที่ขาและ<mark>รอดชีวิตไว้ได้</mark></p>
-
-<p>วันที่ 15 มิถุนายน ศาล<mark>อนุมัติประกันตัว</mark> 500,000 บาท แต่กำหนด<mark>เงื่อนไขเข้มงวด</mark>หลายอย่าง: ห้ามติดต่อภรรยาหรือญาติผู้เสียชีวิต ห้ามออกนอกประเทศ ห้ามพกอาวุธใดๆ และห้าม<mark>แทรกแซงพยาน</mark> คดีนี้จุดประเด็นสังคมเรื่อง<mark>การใช้กำลังอาวุธอย่างเกินเหตุโดยเจ้าหน้าที่นอกเวรา</mark> และ<mark>ความรับผิดชอบของตำรวจไทย</mark></p>
-
-<hr class="div">
-
+<p>ตำรวจสายตรวจชายแดนนอกเวรายิงคนขับวินมอเตอร์ไซค์รับจ้างเสียชีวิต 2 ราย และบาดเจ็บอีก 1 ราย เหตุโต้เถียงเรื่องค่าโดยสาร; ทั้งหมดนี้ได้รับการประกันตัวพร้อมเงื่อนไขเข้มงวด</p>
+<p>ตำรวจสายตรวจชายแดนนอกเวรากระสุนทั้งหมดใส่และยิงใส่กลุ่มคนขับวินมอเตอร์ไซค์รับจ้างในเย็นมืดวันที่ 14 มิถุนายน 2569 สถานที่เกิดเหตุซอยประชาสงเคราะห์ 38 ใกล้ตลาดหวยขวาง เขตประชาสงเคราะห์ เขตดินแดง</p>
+<p>ผู้ต้องสงสัย สิบเอกนัฐวุฒิ รักษาสันติภาพ อายุ 33 ปี เดินทางมาจากจ.สุรินทร์เพื่อสอบเลื่อนตำแหน่ง หลังเกิด ข้อพิพาทเรื่องค่าโดยสาร เขาเห็นว่า 120 บาทแพงเกินไป ขอกดลง 60 บาท อันนำไปสู่การเถียงวาจากกันอย่างรุนแรง</p>
+<p>ภาพจากกล้องวงจรแสดงให้เห็นว่าฉาริน ขุนนารักเตะเท้าจนก็นเซียก่อนที่อีกคนจะเตะอีกครั้ง จากนั้นนัฐวุฒิควักปืน และยิงหลายนัดใส่กลุ่ม พุริทฌ์ หมานฒิษาน เสียชีวิตในที่เกิดเหตุ ฉารินเสียชีวิตภายหลังจากจำหน่ายทัพไปที่โรงพยาบาล ส่วนเกียติษักบาดเจ็บที่ขาและรอดชีวิตไว้ได้</p>
+<p>วันที่ 15 มิถุนายน ศาลอนุมัติประกันตัว 500,000 บาท แต่กำหนดเงื่อนไขเข้มงวดหลายอย่าง: ห้ามติดต่อภรรยาหรือญาติผู้เสียชีวิต ห้ามออกนอกประเทศ ห้ามพกอาวุธใดๆ และห้ามแทรกแซงพยาน คดีนี้จุดประเด็นสังคมเรื่องการใช้กำลังอาวุธอย่างเกินเหตุโดยเจ้าหน้าที่นอกเวรา และความรับผิดชอบของตำรวจไทย</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 3 — Vocabulary Table (30 Words)</div>
-<hr class="div">
-
-<div class="headline" style="margin-top: 20px; font-size: 22px;">Part 4 — Anki Format</div>
 
 
 <a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
