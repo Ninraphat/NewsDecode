@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+document.addEventListener('click', function(e) {
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
+  }
+});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily News Decode – 2026-06-10</title>
@@ -47,45 +61,21 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
-<p>Pattaya <mark>Arsenal</mark> Case Expands: Chinese <mark>Suspect</mark> Sun Mingchen Linked to <mark>Transnational Scam Networks</mark>, Thai Navy Officers <mark>Charged</mark> with Illegal <mark>Arms Supply</mark></p>
-
-<hr class="div">
-
-<p>A routine traffic accident in Chon Buri province has <mark>unravelled</mark> one of Thailand's most serious national security cases in recent years, leading to the <mark>arrest</mark> of 31-year-old Chinese national Sun Mingchen and the subsequent <mark>detention</mark> of at least 11 additional <mark>suspects</mark> across seven interconnected criminal <mark>investigations</mark> involving <mark>illegal weapons trafficking</mark>, <mark>cyberscam</mark> networks, <mark>money laundering</mark>, and the <mark>fraudulent</mark> procurement of official Thai identity documents.</p>
-
-<p>The chain of events began on the evening of 8 May, when police were alerted to a vehicle <mark>rollover</mark> accident in Bang Lamung district, Chon Buri. The driver, Sun Mingchen, and his Taiwanese <mark>passenger</mark>, Ma Yu-Hsin, 33, were <mark>uninjured</mark>. However, a subsequent search of the vehicle <mark>uncovered</mark> firearms and ammunition. A further search of Sun's <mark>rented residence</mark> near Pattaya <mark>revealed</mark> a <mark>cache</mark> of military-grade weapons, including M16 and M4 <mark>assault rifles</mark>, a Glock 26 <mark>handgun</mark>, fragmentation <mark>grenades</mark>, C4 <mark>explosives</mark>, anti-personnel devices, <mark>bulletproof vests</mark>, and four 20-litre containers of fuel. Video found on his mobile phone showed him <mark>training</mark> a machine gun on a target.</p>
-
-<p>Sun was initially <mark>charged</mark> with multiple <mark>offences</mark>: possessing <mark>firearms</mark> and <mark>ammunition</mark> without permission, carrying a firearm in a public place, possessing <mark>military-grade explosives</mark>, and holding <mark>unlicensed firearms</mark>. Ma Yu-Hsin was also <mark>charged</mark> with jointly possessing firearms. Sun reportedly <mark>confessed</mark> to all <mark>charges</mark> and claimed he had been suffering from <mark>depression</mark> and intended the weapons for a <mark>suicide bombing</mark>, though <mark>psychiatric</mark> evaluation was ordered to verify this <mark>claim</mark>.</p>
-
-<p>Further investigation revealed that Sun held both Chinese and Cambodian <mark>passports</mark>, as well as a pink <mark>identification card</mark> issued to long-term foreign <mark>residents</mark> of Thailand. He had first entered Thailand in 2020 on a tourist visa and had <mark>re-entered</mark> on 27 January 2026 under a multi-year visa <mark>permit</mark>. He was also registered at an address in Bangkok's Khlong Sam Wa district and had been paying 38,000 baht per month for his Pattaya <mark>rental</mark>.</p>
-
-<p>The <mark>probe</mark> rapidly expanded under orders from national police chief Pol Gen Kittharath Punpetch. Five Thai suspects — including <mark>navy</mark> officers and civilians — were <mark>charged</mark> with the <mark>illegal possession and sale of weapons of war</mark> after <mark>investigators traced</mark> the <mark>arms supply chain</mark> back to a Pattaya shooting range. Sun had met shooting range operator Kachen Sianglum at the facility and <mark>exchanged</mark> contact details. Three suspects were <mark>arrested</mark> and two others were <mark>summoned</mark> for questioning. All <mark>denied</mark> the charges and stated they would <mark>prove their innocence in court</mark>.</p>
-
-<p>Police also <mark>uncovered</mark> strong financial links. Authorities confirmed Sun allegedly acted as a financial <mark>"wallet"</mark> for <mark>scam syndicates</mark> based in <mark>neighbouring countries</mark>, particularly <mark>Cambodia</mark>, with international money transfers involving <mark>tens of millions of baht</mark> traced through connected accounts. A separate <mark>sub-case</mark> involved the <mark>fraudulent</mark> application for Sun's pink ID card, which led to the <mark>arrest</mark> of a former district official in Chiang Mai.</p>
-
-<p>The case <mark>prompted</mark> Prime Minister Anutin Charnvirakul to <mark>summon</mark> senior police officers to Government House for <mark>urgent discussions</mark> and has led to calls for <mark>stricter</mark> immigration <mark>screening</mark> and a review of long-term <mark>visa privileges</mark> available to wealthy foreign <mark>nationals</mark>. Police said the investigation <mark>reflects</mark> broader <mark>vulnerabilities</mark> in Thailand's status as an international tourism and business hub, and that <mark>surveillance</mark> operations had been expanded to tourist destinations including Koh Phangan, Phuket, Pai, and Hua Hin.</p>
-
-<hr class="div">
-
+<p>Pattaya Arsenal Case Expands: Chinese Suspect Sun Mingchen Linked to Transnational Scam Networks, Thai Navy Officers Charged with Illegal Arms Supply</p>
+<p>A routine traffic accident in Chon Buri province has unravelled one of Thailand's most serious national security cases in recent years, leading to the arrest of 31-year-old Chinese national Sun Mingchen and the subsequent detention of at least 11 additional suspects across seven interconnected criminal investigations involving illegal weapons trafficking, cyberscam networks, money laundering, and the fraudulent procurement of official Thai identity documents.</p>
+<p>The chain of events began on the evening of 8 May, when police were alerted to a vehicle rollover accident in Bang Lamung district, Chon Buri. The driver, Sun Mingchen, and his Taiwanese passenger, Ma Yu-Hsin, 33, were uninjured. However, a subsequent search of the vehicle uncovered firearms and ammunition. A further search of Sun's rented residence near Pattaya revealed a cache of military-grade weapons, including M16 and M4 assault rifles, a Glock 26 handgun, fragmentation grenades, C4 explosives, anti-personnel devices, bulletproof vests, and four 20-litre containers of fuel. Video found on his mobile phone showed him training a machine gun on a target.</p>
+<p>Sun was initially charged with multiple offences: possessing firearms and ammunition without permission, carrying a firearm in a public place, possessing military-grade explosives, and holding unlicensed firearms. Ma Yu-Hsin was also charged with jointly possessing firearms. Sun reportedly confessed to all charges and claimed he had been suffering from depression and intended the weapons for a suicide bombing, though psychiatric evaluation was ordered to verify this claim.</p>
+<p>Further investigation revealed that Sun held both Chinese and Cambodian passports, as well as a pink identification card issued to long-term foreign residents of Thailand. He had first entered Thailand in 2020 on a tourist visa and had re-entered on 27 January 2026 under a multi-year visa permit. He was also registered at an address in Bangkok's Khlong Sam Wa district and had been paying 38,000 baht per month for his Pattaya rental.</p>
+<p>The probe rapidly expanded under orders from national police chief Pol Gen Kittharath Punpetch. Five Thai suspects — including navy officers and civilians — were charged with the illegal possession and sale of weapons of war after investigators traced the arms supply chain back to a Pattaya shooting range. Sun had met shooting range operator Kachen Sianglum at the facility and exchanged contact details. Three suspects were arrested and two others were summoned for questioning. All denied the charges and stated they would prove their innocence in court.</p>
+<p>Police also uncovered strong financial links. Authorities confirmed Sun allegedly acted as a financial "wallet" for scam syndicates based in neighbouring countries, particularly Cambodia, with international money transfers involving tens of millions of baht traced through connected accounts. A separate sub-case involved the fraudulent application for Sun's pink ID card, which led to the arrest of a former district official in Chiang Mai.</p>
+<p>The case prompted Prime Minister Anutin Charnvirakul to summon senior police officers to Government House for urgent discussions and has led to calls for stricter immigration screening and a review of long-term visa privileges available to wealthy foreign nationals. Police said the investigation reflects broader vulnerabilities in Thailand's status as an international tourism and business hub, and that surveillance operations had been expanded to tourist destinations including Koh Phangan, Phuket, Pai, and Hua Hin.</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 2 — คำแปลภาษาไทย</div>
-<p><mark>คดีคลังแสนพัทยาขยายตัว</mark>: ชาวจีนซันมิงเจิ้นเชื่อมโยง<mark>เครือข่ายแก็งสแกมเมอร์ข้ามชาติ</mark> เจ้าหน้าที่ทหารเรือถูก<mark>ตั้งข้อหา</mark>ค้าอาวุธผิดกฎหมาย</p>
-
-<hr class="div">
-
-<p>เหตุการณ์เริ่มต้นจากอุบัติเหตุ<mark>รถคว่ำ</mark> ในอำเภอบางละมุง จ.ชลบุรี เมื่อคืนวันที่ 8 พ.ค. รถยนต์ของ<mark>ซัน มิงเจิ้น</mark> สัญชาติจีน อายุ 31 ปี<mark>คว่ำ</mark> เจ้าหน้าที่ค้น<mark>อาวุธปืนและกระสุนในรถ</mark> และตรวจค้นบ้านเช่าใกล้พัทยาพบ<mark>คลังแสนอาวุธ</mark> ได้แกปืนไรเฟิล M16/M4, <mark>ระเบิดมือ</mark>, C4, <mark>เสื้อกันกระสุน</mark> และน้ำมัน  4 ถัง</p>
-
-<p>ซันให้การ<mark>รับสารภาพ</mark>ทุกข้อหา และอ้างว่าตนป่วย<mark>โรคซึมเศร้า</mark> และตั้งใจใช้อาวุธเพื่อ<mark>ก่อเหตุระเบิดพลีชีพตัวเอง</mark> แต่ต้องมีผลการ<mark>ตรวจเชิงจิตเวช</mark> ยืนยันต่อไป พบว่าซันถือทั้ง<mark>หนังสือเดินทาง</mark>จีนและกัมพูชา พร้อมทั้ง<mark>บัตรประจำตัว สีชมพู</mark>สำหรับชาวต่างชาติที่พักอาศัยระยะยาวในไทย</p>
-
-<p>ตำรวจ<mark>ตรวจสอบ</mark>พบเส้นทาง<mark>การเงิน</mark>เชื่อมโยงซันกับ<mark>เครือข่ายแก็งสแกมเมอร์</mark>ในประเทศเพื่อนบ้าน โดยเฉพาะกัมพูชา ยืนยันว่าซันทำหน้าที่เป็น "กระเป๋าเงิน" (<mark>financial wallet</mark>) ให้แก่เครือข่ายอาชญากรรม โดยมีเงินโอนไปยังบัญชีผู้เกี่ยวข้องมูลค่า<mark>หลายสิบล้านบาท</mark></p>
-
-<p>คดีนี้ทำให้<mark>นายกรัฐมนตรี</mark>สั่งเรียก<mark>ผู้บัญชาการตำรวจ</mark>มาหารือปรึกษาด่วนที่ทำเนียบรัฐบาล และเกิดเสียงเรียกร้องให้เข้มงวดการ<mark>คัดกรองคุณสมบัติผู้เข้าเมือง</mark>และทบทวนสิทธิพิเศษของ<mark>วีซ่าระยะยาว</mark>สำหรับชาวต่างชาติที่มีผลกระทบต่อความมั่นคงแห่งชาติ</p>
-
-<hr class="div">
-
+<p>คดีคลังแสนพัทยาขยายตัว: ชาวจีนซันมิงเจิ้นเชื่อมโยงเครือข่ายแก็งสแกมเมอร์ข้ามชาติ เจ้าหน้าที่ทหารเรือถูกตั้งข้อหาค้าอาวุธผิดกฎหมาย</p>
+<p>เหตุการณ์เริ่มต้นจากอุบัติเหตุรถคว่ำ ในอำเภอบางละมุง จ.ชลบุรี เมื่อคืนวันที่ 8 พ.ค. รถยนต์ของซัน มิงเจิ้น สัญชาติจีน อายุ 31 ปีคว่ำ เจ้าหน้าที่ค้นอาวุธปืนและกระสุนในรถ และตรวจค้นบ้านเช่าใกล้พัทยาพบคลังแสนอาวุธ ได้แกปืนไรเฟิล M16/M4, ระเบิดมือ, C4, เสื้อกันกระสุน และน้ำมัน  4 ถัง</p>
+<p>ซันให้การรับสารภาพทุกข้อหา และอ้างว่าตนป่วยโรคซึมเศร้า และตั้งใจใช้อาวุธเพื่อก่อเหตุระเบิดพลีชีพตัวเอง แต่ต้องมีผลการตรวจเชิงจิตเวช ยืนยันต่อไป พบว่าซันถือทั้งหนังสือเดินทางจีนและกัมพูชา พร้อมทั้งบัตรประจำตัว สีชมพูสำหรับชาวต่างชาติที่พักอาศัยระยะยาวในไทย</p>
+<p>ตำรวจตรวจสอบพบเส้นทางการเงินเชื่อมโยงซันกับเครือข่ายแก็งสแกมเมอร์ในประเทศเพื่อนบ้าน โดยเฉพาะกัมพูชา ยืนยันว่าซันทำหน้าที่เป็น "กระเป๋าเงิน" (financial wallet) ให้แก่เครือข่ายอาชญากรรม โดยมีเงินโอนไปยังบัญชีผู้เกี่ยวข้องมูลค่าหลายสิบล้านบาท</p>
+<p>คดีนี้ทำให้นายกรัฐมนตรีสั่งเรียกผู้บัญชาการตำรวจมาหารือปรึกษาด่วนที่ทำเนียบรัฐบาล และเกิดเสียงเรียกร้องให้เข้มงวดการคัดกรองคุณสมบัติผู้เข้าเมืองและทบทวนสิทธิพิเศษของวีซ่าระยะยาวสำหรับชาวต่างชาติที่มีผลกระทบต่อความมั่นคงแห่งชาติ</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 3 — Vocabulary Table (30 Words)</div>
-<hr class="div">
-
-<div class="headline" style="margin-top: 20px; font-size: 22px;">Part 4 — Anki Format</div>
 
 
 <a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
