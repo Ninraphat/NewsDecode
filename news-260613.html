@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+document.addEventListener('click', function(e) {
+  // เช็กว่าสิ่งที่คลิกคือ span หรือไม่
+  let target = e.target;
+  
+  if (target.classList.contains('word-en')) {
+    target.style.display = 'none';
+    target.nextElementSibling.style.display = 'inline';
+  } else if (target.classList.contains('word-th')) {
+    target.style.display = 'none';
+    target.previousElementSibling.style.display = 'inline';
+  }
+});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily News Decode – 2026-06-13</title>
@@ -47,45 +61,21 @@ mark { background:var(--hl); color:inherit; padding:0 2px; border-radius:2px; bo
 <a href="index.html" class="btn-back">&larr; Back to Homepage</a>
 
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 1 — English Article</div>
-<p>Two <mark>Arrested</mark> for Selling <mark>"Premium Grade" Mule Accounts</mark> Linked to <mark>Cybercrime Suppression Law</mark> <mark>Violations</mark></p>
-
-<hr class="div">
-
-<p>Police <mark>arrested</mark> two <mark>suspects</mark> in the Pak Kret area of Nonthaburi province after they were <mark>caught</mark> in the act of <mark>delivering</mark> a bank account being sold as a <mark>"premium grade" mule account</mark>, <mark>part of</mark> a wider crackdown on <mark>financial networks</mark> that <mark>facilitate</mark> online <mark>scams</mark> in Thailand.</p>
-
-<p>The <mark>operation</mark> began after <mark>investigators</mark> received a <mark>tip</mark> about an individual <mark>advertising</mark> the sale of bank accounts on an online <mark>platform</mark>, <mark>describing</mark> them using the term "<mark>premium grade</mark>" — a label typically used to mean the account had a high <mark>transaction limit</mark> and <mark>clean transaction history</mark>, making it more <mark>valuable</mark> to <mark>criminal networks</mark> because it could <mark>process</mark> larger sums without <mark>triggering</mark> bank <mark>fraud alerts</mark>.</p>
-
-<p><mark>Undercover officers posed as buyers</mark> and <mark>arranged</mark> a <mark>meeting</mark> to <mark>collect</mark> the account <mark>materials</mark>. When the <mark>suspect</mark>, identified as Worawut, arrived to <mark>hand over</mark> an <mark>envelope</mark> containing a <mark>bank passbook</mark>, <mark>ATM card</mark>, and <mark>PIN</mark> details, officers <mark>moved in</mark> and made the <mark>arrest</mark>. During <mark>questioning</mark>, Worawut told police he was <mark>not</mark> the <mark>account owner</mark> and had simply been <mark>paid</mark> 10,000 baht to <mark>deliver</mark> the <mark>envelope</mark> on someone else's behalf.</p>
-
-<p><mark>Investigators</mark> said the account had been <mark>supplied</mark> through a <mark>chain of intermediaries</mark> linked to a larger <mark>mule-account network</mark>. Police explained that <mark>mule accounts</mark> are <mark>commonly used</mark> to <mark>receive money</mark> from <mark>scam victims</mark> and <mark>launder</mark> the <mark>proceeds</mark> of <mark>illegal activities</mark>, making <mark>financial transactions</mark> more <mark>difficult to trace</mark> back to the <mark>original perpetrators</mark>. Such accounts form a <mark>critical link</mark> in the <mark>infrastructure</mark> that allows <mark>call-centre gangs</mark> and <mark>online fraud syndicates</mark> to <mark>move money</mark> quickly across multiple accounts before <mark>victims</mark> realise they have been <mark>scammed</mark>.</p>
-
-<p>Both <mark>suspects</mark> were <mark>charged</mark> with <mark>jointly procuring</mark>, <mark>advertising</mark>, or <mark>facilitating</mark> the <mark>sale</mark>, <mark>rental</mark>, or <mark>lending</mark> of <mark>bank accounts</mark> and <mark>electronic payment accounts</mark>, in <mark>violation</mark> of Thailand's <mark>Cybercrime Suppression Act</mark>. They were <mark>handed over</mark> to Pak Kret police <mark>station</mark> for further <mark>legal action</mark> and were being <mark>held in custody</mark> while the <mark>investigation continued</mark>. Police said they would <mark>trace</mark> the <mark>chain of intermediaries</mark> to <mark>identify</mark> the <mark>original supplier</mark> of the account and <mark>determine</mark> whether it had already been used in any <mark>completed fraud cases</mark>.</p>
-
-<p>The case <mark>highlights</mark> the <mark>ongoing challenge</mark> Thai <mark>authorities</mark> face in <mark>combating</mark> the <mark>trade</mark> in mule accounts, which <mark>remains</mark> a key <mark>enabler</mark> of the <mark>billions of baht</mark> in <mark>losses</mark> Thai citizens <mark>suffer</mark> annually from <mark>online scams</mark>, particularly those <mark>operated</mark> by <mark>transnational</mark> <mark>criminal syndicates</mark> based in <mark>neighbouring countries</mark>.</p>
-
-<hr class="div">
-
+<p>Two Arrested for Selling "Premium Grade" Mule Accounts Linked to Cybercrime Suppression Law Violations</p>
+<p>Police arrested two suspects in the Pak Kret area of Nonthaburi province after they were caught in the act of delivering a bank account being sold as a "premium grade" mule account, part of a wider crackdown on financial networks that facilitate online scams in Thailand.</p>
+<p>The operation began after investigators received a tip about an individual advertising the sale of bank accounts on an online platform, describing them using the term "premium grade" — a label typically used to mean the account had a high transaction limit and clean transaction history, making it more valuable to criminal networks because it could process larger sums without triggering bank fraud alerts.</p>
+<p>Undercover officers posed as buyers and arranged a meeting to collect the account materials. When the suspect, identified as Worawut, arrived to hand over an envelope containing a bank passbook, ATM card, and PIN details, officers moved in and made the arrest. During questioning, Worawut told police he was not the account owner and had simply been paid 10,000 baht to deliver the envelope on someone else's behalf.</p>
+<p>Investigators said the account had been supplied through a chain of intermediaries linked to a larger mule-account network. Police explained that mule accounts are commonly used to receive money from scam victims and launder the proceeds of illegal activities, making financial transactions more difficult to trace back to the original perpetrators. Such accounts form a critical link in the infrastructure that allows call-centre gangs and online fraud syndicates to move money quickly across multiple accounts before victims realise they have been scammed.</p>
+<p>Both suspects were charged with jointly procuring, advertising, or facilitating the sale, rental, or lending of bank accounts and electronic payment accounts, in violation of Thailand's Cybercrime Suppression Act. They were handed over to Pak Kret police station for further legal action and were being held in custody while the investigation continued. Police said they would trace the chain of intermediaries to identify the original supplier of the account and determine whether it had already been used in any completed fraud cases.</p>
+<p>The case highlights the ongoing challenge Thai authorities face in combating the trade in mule accounts, which remains a key enabler of the billions of baht in losses Thai citizens suffer annually from online scams, particularly those operated by transnational criminal syndicates based in neighbouring countries.</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 2 — คำแปลภาษาไทย</div>
-<p><mark>จับ</mark> 2 ผู้ต้องสงสัยจำหน่าย<mark>บัญชีม้าเกระเกรียบเกรดพรีเมี่ยม</mark>เชื่อมโยงกับ<mark>การละเมิดพ.ร.บ.คอมพิวเตอร์</mark></p>
-
-<hr class="div">
-
-<p>ตำรวจ<mark>จับ</mark>ผู้ต้องสงสัยสองคนในพื้นที่ปากเกร็ด จ.นนทบุรี หลังจับได้<mark>ขระหา</mark>ระหว่าง<mark>ส่งมอบ</mark>บัญชีที่ขายเป็น<mark>บัญชีม้าเกระเกรียบเกรดพรีเมี่ยม</mark> ซึ่งเป็นส่วนหนึ่งของการกวาดล้อมเครือข่ายการเงินที่<mark>สนปน</mark>การหลอกลวงออนไลน์ในประเทศไทย</p>
-
-<p><mark>การปฏิบัติการ</mark>เริ่มจากเหตุที่<mark>ผู้สืบสวน</mark>ได้รับ<mark>เบาะแส</mark>เกี่ยวกับบุคคลซึ่ง<mark>ลงขาย</mark>บัญชีทล54มงบพริม<mark>พรีเมี่ยม</mark> ซึ่งหมายถึงบัญชีที่มี<mark>วงเงีนทา10รกรรมสูง</mark>และ<mark>ประวัติการทำรายการสะอาด</mark> จิงทำให้<mark>มีมูลค่าสูง</mark>ต่อ<mark>เครือข่ายอาชญากรรม</mark> เพราะสามารถ<mark>ส่งผ่าน</mark>เงินจำนวนมากได้โดยไม่<mark>กระตุ้น</mark>การ<mark>เตือนซ้อมปลอม</mark>จากทางทร99ร</p>
-
-<p><mark>เจ้าหน้าที่นอกเครื่องแบบปลอมเป็นผู้ซื้อ</mark> และ<mark>ตตระ</mark>การนัดพบเพื่อ<mark>รับ</mark>อุปกรณ์บัญชี เมื่อผู้ต้องสงสัยชื่อวรวุชมา<mark>ส่งมอบ</mark>ซองจดหมายบัญชี<mark>บัญชีเงินฝาก</mark> <mark>บีเอทีเอ็ม</mark> และรหัส<mark>PIN</mark> มาให้ เจ้าหน้าตำรวจ<mark>เข้าจับกุม</mark>ทันที ระหว่าง<mark>การสอบสวน</mark> วรวุชยืนยันว่าตน<mark>ไม่ได้เป็นเจ้าของบัญชี</mark> และได้รับ<mark>ค่าจ้าง</mark>เพียง 10,000 บาทเพื่อ<mark>ส่งมอบ</mark>ซองดังกล่าวให้ผู้อื่น</p>
-
-<p>ตำรวจระบุว่าบัญชีดังกล่าวถูก<mark>จิดหา</mark>ผ่าน<mark>สายของบุคคลกลาง</mark>หลายช่อง เชื่อมโยงกับ<mark>เครือข่ายบัญชีม้า</mark>ขนาดใหญ่ ตำรวจอธิบายว่า<mark>บัญชีม้า</mark>มีไว้เพื่อ<mark>รับเงิน</mark>จาก<mark>ผู้เสียหายจากกลลอกหลอก</mark> แล้ว<mark>ฟอกเงิน</mark>ผลได้จาก<mark>การกระทำผิดกฎหมาย</mark> ทำให้<mark>ตระหนการเงิน</mark>ยากขึ้น บัญชีม้าจึงเป็น<mark>จุดเชื่อมสำคัญ</mark>ของ<mark>โครงสร้างพื้นฐาน</mark>ที่ช่วยให้<mark>แก๊งคอลเซ็นเตอร์</mark>และ<mark>เครือข่ายออนไลน์</mark>ย้ายเงินอย่างรวดเร็วก่อนที่<mark>เหยื่อ</mark>จะรู้ตัวว่าถูก<mark>หลอกลวง</mark></p>
-
-<p>ผู้ต้องสงสัยทั้งสองสถูก<mark>ตั้งข้อหา</mark>ร่วมกัน<mark>จัดหา โฬษณา หรืออำนวยความสะดวก</mark>การ<mark>ซื้อขาย เช่า หรือยืม</mark>บัญชีเงินฝากอิเล็กทรอนิกส์<mark> ซึ่งเป็นการ</mark>ละเมิดพ.ร.บ.คอมพิวเตอร์<mark>ของไทย ถูก</mark>ส่งตัวไปยังสถานีปากเกร็ดเพื่อดำเนินการต่อไป</p>
-
-<hr class="div">
-
+<p>จับ 2 ผู้ต้องสงสัยจำหน่ายบัญชีม้าเกระเกรียบเกรดพรีเมี่ยมเชื่อมโยงกับการละเมิดพ.ร.บ.คอมพิวเตอร์</p>
+<p>ตำรวจจับผู้ต้องสงสัยสองคนในพื้นที่ปากเกร็ด จ.นนทบุรี หลังจับได้ขระหาระหว่างส่งมอบบัญชีที่ขายเป็นบัญชีม้าเกระเกรียบเกรดพรีเมี่ยม ซึ่งเป็นส่วนหนึ่งของการกวาดล้อมเครือข่ายการเงินที่สนปนการหลอกลวงออนไลน์ในประเทศไทย</p>
+<p>การปฏิบัติการเริ่มจากเหตุที่ผู้สืบสวนได้รับเบาะแสเกี่ยวกับบุคคลซึ่งลงขายบัญชีทล54มงบพริมพรีเมี่ยม ซึ่งหมายถึงบัญชีที่มีวงเงีนทา10รกรรมสูงและประวัติการทำรายการสะอาด จิงทำให้มีมูลค่าสูงต่อเครือข่ายอาชญากรรม เพราะสามารถส่งผ่านเงินจำนวนมากได้โดยไม่กระตุ้นการเตือนซ้อมปลอมจากทางทร99ร</p>
+<p>เจ้าหน้าที่นอกเครื่องแบบปลอมเป็นผู้ซื้อ และตตระการนัดพบเพื่อรับอุปกรณ์บัญชี เมื่อผู้ต้องสงสัยชื่อวรวุชมาส่งมอบซองจดหมายบัญชีบัญชีเงินฝาก บีเอทีเอ็ม และรหัสPIN มาให้ เจ้าหน้าตำรวจเข้าจับกุมทันที ระหว่างการสอบสวน วรวุชยืนยันว่าตนไม่ได้เป็นเจ้าของบัญชี และได้รับค่าจ้างเพียง 10,000 บาทเพื่อส่งมอบซองดังกล่าวให้ผู้อื่น</p>
+<p>ตำรวจระบุว่าบัญชีดังกล่าวถูกจิดหาผ่านสายของบุคคลกลางหลายช่อง เชื่อมโยงกับเครือข่ายบัญชีม้าขนาดใหญ่ ตำรวจอธิบายว่าบัญชีม้ามีไว้เพื่อรับเงินจากผู้เสียหายจากกลลอกหลอก แล้วฟอกเงินผลได้จากการกระทำผิดกฎหมาย ทำให้ตระหนการเงินยากขึ้น บัญชีม้าจึงเป็นจุดเชื่อมสำคัญของโครงสร้างพื้นฐานที่ช่วยให้แก๊งคอลเซ็นเตอร์และเครือข่ายออนไลน์ย้ายเงินอย่างรวดเร็วก่อนที่เหยื่อจะรู้ตัวว่าถูกหลอกลวง</p>
+<p>ผู้ต้องสงสัยทั้งสองสถูกตั้งข้อหาร่วมกันจัดหา โฬษณา หรืออำนวยความสะดวกการซื้อขาย เช่า หรือยืมบัญชีเงินฝากอิเล็กทรอนิกส์ ซึ่งเป็นการละเมิดพ.ร.บ.คอมพิวเตอร์ของไทย ถูกส่งตัวไปยังสถานีปากเกร็ดเพื่อดำเนินการต่อไป</p>
 <div class="headline" style="margin-top: 20px; font-size: 22px;">Part 3 — Vocabulary Table (30 Words)</div>
-<hr class="div">
-
-<div class="headline" style="margin-top: 20px; font-size: 22px;">Part 4 — Anki Format</div>
 
 
 <a href="index.html" class="btn-back btn-back-bottom">&larr; Back to Homepage</a>
