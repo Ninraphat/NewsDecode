@@ -39,6 +39,9 @@
   -webkit-line-clamp: 3;   /* ให้แสดงสูงสุด 3 บรรทัด */
   -webkit-box-orient: vertical;  
   overflow: hidden; 
+  .grid-card { display: flex; flex-direction: column; height: 100%;  }
+  .grid-card div { transition: opacity 0.2s;}
+  .grid-card:hover div { opacity: 0.6;}
 }
 
   footer { text-align: center; padding: 32px 0; border-top: 1px solid var(--border-color); font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
